@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2vjliaxi6bjn"]
+
+[ext_resource type="Texture2D" uid="uid://1j272w87jc6p" path="res://kenney_sokoban-pack/PNG/Default size/Player/player_01.png" id="1_wltir"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jiowd"]
+size = Vector2(29, 21)
+
+[node name="rb2d" type="RigidBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 13.5)
+shape = SubResource("RectangleShape2D_jiowd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_wltir")
