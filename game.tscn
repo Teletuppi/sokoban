@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=4 uid="uid://dcgtch2cy08wl"]
 
 [ext_resource type="Texture2D" uid="uid://so5pcoq1biko" path="res://kenney_sokoban-pack/Tilesheet/sokoban_tilesheet.png" id="2_e2o6t"]
-[ext_resource type="PackedScene" uid="uid://c2vjliaxi6bjn" path="res://rigid_body_2d.tscn" id="2_feb5d"]
+[ext_resource type="PackedScene" uid="uid://dchub31y4txis" path="res://pelaaja.tscn" id="2_feb5d"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e2o6t"]
 texture = ExtResource("2_e2o6t")
@@ -125,11 +125,11 @@ position = Vector2(-824.405, 56.0758)
 tile_map_data = PackedByteArray("AAAQAAcAAAALAAYAAAARAAcAAAALAAYAAAASAAcAAAALAAYAAAATAAcAAAALAAYAAAAUAAcAAAALAAYAAAAUAAYAAAALAAYAAAATAAYAAAALAAYAAAASAAYAAAALAAYAAAARAAYAAAALAAYAAAAQAAYAAAALAAYAAAAQAAUAAAALAAYAAAARAAUAAAALAAYAAAASAAUAAAALAAYAAAATAAUAAAALAAYAAAAUAAUAAAALAAYAAAAQAAQAAAAIAAcAAAARAAQAAAAIAAcAAAASAAQAAAAIAAcAAAATAAQAAAAIAAcAAAAUAAQAAAAIAAcAAAAVAAQAAAAIAAcAAAAVAAUAAAAIAAcAAAAVAAYAAAAIAAcAAAAVAAcAAAAIAAcAAAAVAAgAAAAIAAcAAAAUAAgAAAAIAAcAAAATAAgAAAAIAAcAAAASAAgAAAAIAAcAAAARAAgAAAAIAAcAAAAQAAgAAAAIAAcAAAAPAAgAAAAIAAcAAAAPAAcAAAAIAAcAAAAPAAYAAAAIAAcAAAAPAAUAAAAIAAcAAAAPAAQAAAAIAAcAAAA=")
 tile_set = SubResource("TileSet_feb5d")
 
-[node name="pelaaja" parent="." instance=ExtResource("2_feb5d")]
-position = Vector2(241, 463)
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_feb5d")]
+position = Vector2(276, 455)
 
-[node name="pelaaja2" parent="." instance=ExtResource("2_feb5d")]
-position = Vector2(345, 487)
+[node name="CharacterBody2D2" parent="." instance=ExtResource("2_feb5d")]
+position = Vector2(342, 493)
 
-[node name="pelaaja3" parent="." instance=ExtResource("2_feb5d")]
-position = Vector2(415, 431)
+[node name="CharacterBody2D3" parent="." instance=ExtResource("2_feb5d")]
+position = Vector2(453, 430)
