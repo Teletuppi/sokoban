@@ -1,3 +1,4 @@
+<<<<<<< ours
 [gd_scene load_steps=5 format=3 uid="uid://dcgtch2cy08wl"]
 
 [ext_resource type="Texture2D" uid="uid://f6bt0ry7gx8m" path="res://icon.svg" id="1_80nbo"]
@@ -124,3 +125,4 @@ texture = ExtResource("1_80nbo")
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(-824.405, 56.0758)
 tile_set = SubResource("TileSet_feb5d")
+
