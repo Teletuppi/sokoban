@@ -5,5 +5,5 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(80, 83)
+position = Vector2(269, -56)
 texture = ExtResource("1_80nbo")
