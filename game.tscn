@@ -1,7 +1,6 @@
 [gd_scene load_steps=5 format=4 uid="uid://dcgtch2cy08wl"]
 
 [ext_resource type="Texture2D" uid="uid://so5pcoq1biko" path="res://kenney_sokoban-pack/Tilesheet/sokoban_tilesheet.png" id="2_e2o6t"]
-
 [ext_resource type="PackedScene" uid="uid://dchub31y4txis" path="res://pelaaja.tscn" id="2_feb5d"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e2o6t"]
@@ -136,3 +135,6 @@ position = Vector2(342, 493)
 
 [node name="CharacterBody2D3" parent="." instance=ExtResource("2_feb5d")]
 position = Vector2(453, 430)
+
+[node name="CharacterBody2D4" parent="." instance=ExtResource("2_feb5d")]
+position = Vector2(359, 425)
