@@ -135,3 +135,6 @@ position = Vector2(342, 493)
 
 [node name="CharacterBody2D3" parent="." instance=ExtResource("2_feb5d")]
 position = Vector2(453, 430)
+
+[node name="CharacterBody2D4" parent="." instance=ExtResource("2_feb5d")]
+position = Vector2(359, 425)
