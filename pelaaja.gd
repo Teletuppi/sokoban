@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @export var speed := 200
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	var input_vector := Vector2.ZERO
 
 	input_vector.x = Input.get_action_strength("right") - Input.get_action_strength("left")
