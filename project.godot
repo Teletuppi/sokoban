@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Sokoban"
 run/main_scene="uid://dcgtch2cy08wl"
-config/features=PackedStringArray("4.4", "GL Compatibility")
+config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://kenney_sokoban-pack/icon.svg"
 
 [editor]
