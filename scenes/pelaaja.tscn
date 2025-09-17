@@ -8,6 +8,7 @@ size = Vector2(20, 17.692308)
 
 [node name="Pelaaja" type="RigidBody2D"]
 script = ExtResource("1_ph81f")
+speed = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 12.5)
