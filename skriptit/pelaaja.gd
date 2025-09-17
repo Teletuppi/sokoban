@@ -2,6 +2,10 @@ extends RigidBody2D
 
 @export var speed := 200.0
 
+
+func _ready() -> void:
+	lock_rotation = true
+
 func _physics_process(_delta: float) -> void:
 	var input_vector := Vector2.ZERO
 	
