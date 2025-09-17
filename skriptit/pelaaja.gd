@@ -1,7 +1,6 @@
 extends RigidBody2D
 
 @export var speed := 200.0
-RigidBody2D.mode = RigidBody2D.MODE_CHARACTER
 
 func _physics_process(_delta: float) -> void:
 	var input_vector := Vector2.ZERO
