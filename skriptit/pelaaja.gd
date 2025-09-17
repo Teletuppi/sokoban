@@ -2,7 +2,6 @@ extends RigidBody2D
 
 @export var speed := 200.0
 
-
 func _ready() -> void:
 	lock_rotation = true
 
