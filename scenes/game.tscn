@@ -135,5 +135,19 @@ tile_set = SubResource("TileSet_feb5d")
 position = Vector2(320, 475)
 physics_material_override = SubResource("PhysicsMaterial_lnu2h")
 
-[node name="boksi" parent="." instance=ExtResource("3_lnu2h")]
+[node name="Boksit" type="Node" parent="."]
+
+[node name="boksi" parent="Boksit" instance=ExtResource("3_lnu2h")]
 position = Vector2(425, 461)
+
+[node name="boksi2" parent="Boksit" instance=ExtResource("3_lnu2h")]
+position = Vector2(798, 332)
+
+[node name="boksi3" parent="Boksit" instance=ExtResource("3_lnu2h")]
+position = Vector2(880, 460)
+
+[node name="boksi4" parent="Boksit" instance=ExtResource("3_lnu2h")]
+position = Vector2(972, 330)
+
+[node name="boksi5" parent="Boksit" instance=ExtResource("3_lnu2h")]
+position = Vector2(996, 478)
