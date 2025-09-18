@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=4 uid="uid://dcgtch2cy08wl"]
+[gd_scene load_steps=7 format=4 uid="uid://dcgtch2cy08wl"]
 
 [ext_resource type="Texture2D" uid="uid://so5pcoq1biko" path="res://kenney_sokoban-pack/Tilesheet/sokoban_tilesheet.png" id="2_e2o6t"]
 [ext_resource type="PackedScene" uid="uid://dchub31y4txis" path="res://scenes/pelaaja.tscn" id="2_feb5d"]
@@ -121,6 +121,9 @@ tile_size = Vector2i(64, 64)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_e2o6t")
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_lnu2h"]
+friction = 0.0
+
 [node name="Game" type="Node2D"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -130,6 +133,7 @@ tile_set = SubResource("TileSet_feb5d")
 
 [node name="Pelaaja" parent="." instance=ExtResource("2_feb5d")]
 position = Vector2(320, 475)
+physics_material_override = SubResource("PhysicsMaterial_lnu2h")
 
 [node name="boksi" parent="." instance=ExtResource("3_lnu2h")]
 position = Vector2(425, 461)
