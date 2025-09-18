@@ -15,3 +15,4 @@ func _physics_process(_delta: float) -> void:
 	
 	# Directly setting linear_velocity overrides physics forces (good for player control)
 	linear_velocity = input_vector * speed
+	print(position)

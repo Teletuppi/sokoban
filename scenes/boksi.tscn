@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c87qi4l76ip6g"]
 
 [ext_resource type="Texture2D" uid="uid://cx8vktkqg1s0d" path="res://kenney_sokoban-pack/PNG/Retina/Crates/crate_07.png" id="1_36jyl"]
-[ext_resource type="Script" uid="uid://cl14u7r6ff87u" path="res://scenes/boksi.gd" id="1_b4j6o"]
+[ext_resource type="Script" uid="uid://cl14u7r6ff87u" path="res://skriptit/boksi.gd" id="1_b4j6o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h5ssj"]
 size = Vector2(21.333334, 21.333334)
