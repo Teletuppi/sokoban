@@ -124,7 +124,7 @@ sources/0 = SubResource("TileSetAtlasSource_e2o6t")
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_lnu2h"]
 friction = 0.0
 
-[node name="Game" type="Node2D"]
+[node name="Level 0" type="Node2D"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(-824.405, 56.0758)

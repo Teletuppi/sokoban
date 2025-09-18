@@ -4,14 +4,19 @@ extends RigidBody2D
 
 func _ready() -> void:
 	lock_rotation = true
+	
+# Napsii pelaajan suunnan
+func get_direction():
+	var direction_vector := Vector2.ZERO
+	direction_vector.x = Input.get_action_strength("right") - Input.get_action_strength("left")
+	direction_vector.y = Input.get_action_strength("down") - Input.get_action_strength("up")
+	return direction_vector.normalized()
+	
+
 
 func _physics_process(_delta: float) -> void:
-	var input_vector := Vector2.ZERO
+	linear_velocity = get_direction() * speed
 	
-	input_vector.x = Input.get_action_strength("right") - Input.get_action_strength("left")
-	input_vector.y = Input.get_action_strength("down") - Input.get_action_strength("up")
-
-	input_vector = input_vector.normalized()
-	
-	# Directly setting linear_velocity overrides physics forces (good for player control)
-	linear_velocity = input_vector * speed
+func _process(delta: float) -> void:
+	# Sprite säätöä
+	pass
