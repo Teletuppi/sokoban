@@ -137,3 +137,6 @@ physics_material_override = SubResource("PhysicsMaterial_lnu2h")
 
 [node name="boksi" parent="." instance=ExtResource("3_lnu2h")]
 position = Vector2(425, 461)
+
+[node name="Pelaaja2" parent="." instance=ExtResource("2_feb5d")]
+position = Vector2(232, 451)
