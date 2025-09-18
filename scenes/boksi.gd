@@ -5,7 +5,7 @@ extends RigidBody2D
 func _ready() -> void:
 	pass # Replace with function body.
 
-func _integrate_forces(state: PhysicsDirectBodyState2D) -> void:
+func _integrate_forces(_state: PhysicsDirectBodyState2D) -> void:
 	linear_velocity *= friction
 	angular_velocity *= friction
 	pass
