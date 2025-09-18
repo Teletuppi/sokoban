@@ -17,6 +17,7 @@ func get_direction():
 func _physics_process(_delta: float) -> void:
 	linear_velocity = get_direction() * speed
 	
+
 func _process(delta: float) -> void:
 	# Sprite säätöä
 	pass

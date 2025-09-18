@@ -15,6 +15,10 @@ run/main_scene="uid://dcgtch2cy08wl"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://kenney_sokoban-pack/icon.svg"
 
+[autoload]
+
+Tilemappi="*res://skriptit/tilemappi.gd"
+
 [editor]
 
 version_control/plugin_name="GitPlugin"
