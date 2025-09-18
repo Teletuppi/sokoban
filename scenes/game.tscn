@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://so5pcoq1biko" path="res://kenney_sokoban-pack/Tilesheet/sokoban_tilesheet.png" id="2_e2o6t"]
 [ext_resource type="PackedScene" uid="uid://dchub31y4txis" path="res://scenes/pelaaja.tscn" id="2_feb5d"]
-[ext_resource type="Script" path="res://skriptit/tilemappi.gd" id="2_lbhrr"]
+[ext_resource type="Script" uid="uid://b3fex8j1r4vnh" path="res://skriptit/tilemappi.gd" id="2_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://c87qi4l76ip6g" path="res://scenes/boksi.tscn" id="3_lnu2h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e2o6t"]
