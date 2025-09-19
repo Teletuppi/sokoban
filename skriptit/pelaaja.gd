@@ -23,7 +23,12 @@ func _physics_process(_delta: float) -> void:
 
 func _process(delta: float) -> void:
 	var direction = get_direction()
+	# Miks niin jäätävä
 	if direction.x > 0:
 		$Sprite2D.texture = OikSprite
-		print($Sprite2D.scale) # ??? en jaksa ny skaalata grr amimir
-	pass
+	elif direction.x < 0:
+		$Sprite2D.texture = VasSprite
+	if direction.y > 0:
+		$Sprite2D.texture = AlaSprite
+	elif direction.y < 0:
+		$Sprite2D.texture = YlaSprite	
