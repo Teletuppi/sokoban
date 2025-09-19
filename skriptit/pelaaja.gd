@@ -21,7 +21,7 @@ func _physics_process(_delta: float) -> void:
 	linear_velocity = get_direction() * speed
 	
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	var direction = get_direction()
 	# Miks niin jäätävä
 	if direction.x > 0:
