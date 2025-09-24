@@ -10,7 +10,7 @@ func _ready() -> void:
 	lock_rotation = true
 	
 	
-# Napsii pelaajan suunnan
+# Napsii pelaajan suunnan #moi nääsilä
 func get_direction():
 	var direction_vector := Vector2.ZERO
 	direction_vector.x = Input.get_action_strength("right") - Input.get_action_strength("left")
