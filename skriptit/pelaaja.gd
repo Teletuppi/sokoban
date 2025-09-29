@@ -6,9 +6,15 @@ var YlaSprite = preload("res://kenney_sokoban-pack/PNG/Retina/Player/player_02.p
 var OikSprite = preload("res://kenney_sokoban-pack/PNG/Retina/Player/player_11.png")
 var VasSprite = preload("res://kenney_sokoban-pack/PNG/Retina/Player/player_14.png")
 
+var skaala = 0.5
+
+func sprite_tiskiin(sprite: Sprite2D) -> void:
+	sprite.scale.x = skaala
+	sprite.scale.y = skaala
+
 func _ready() -> void:
 	lock_rotation = true
-	
+	sprite_tiskiin($Sprite2D)
 	
 # Napsii pelaajan suunnan #moi nääsilä
 func get_direction():
@@ -26,9 +32,13 @@ func _process(delta: float) -> void:
 	# Miks niin jäätävä
 	if direction.x > 0:
 		$Sprite2D.texture = OikSprite
+		sprite_tiskiin($Sprite2D)
 	elif direction.x < 0:
 		$Sprite2D.texture = VasSprite
+		sprite_tiskiin($Sprite2D)
 	if direction.y > 0:
 		$Sprite2D.texture = AlaSprite
+		sprite_tiskiin($Sprite2D)
 	elif direction.y < 0:
 		$Sprite2D.texture = YlaSprite	
+		sprite_tiskiin($Sprite2D)
