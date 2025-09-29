@@ -3,10 +3,13 @@ extends RigidBody2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	for node in get_tree().get_nodes_in_group("Kolot"):
+		print(node)
+		node.body_entered.connect(tippuuu)
 
 func _integrate_forces(_state: PhysicsDirectBodyState2D) -> void:
 	linear_velocity *= friction
 	angular_velocity *= friction
-	pass
 	
+func tippuuu():
+	print("GUUGUU")
