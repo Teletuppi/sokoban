@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=4 uid="uid://dcgtch2cy08wl"]
+[gd_scene load_steps=8 format=4 uid="uid://dcgtch2cy08wl"]
 
 [ext_resource type="Texture2D" uid="uid://so5pcoq1biko" path="res://kenney_sokoban-pack/Tilesheet/sokoban_tilesheet.png" id="1_4hecm"]
 [ext_resource type="Script" uid="uid://b3fex8j1r4vnh" path="res://skriptit/tilemappi.gd" id="2_chmqj"]
@@ -122,6 +122,8 @@ tile_size = Vector2i(64, 64)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_e2o6t")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4hecm"]
+
 [node name="Level 0" type="Node2D"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -134,23 +136,23 @@ script = ExtResource("2_chmqj")
 
 [node name="boksi" parent="Boksit" instance=ExtResource("4_evucq")]
 position = Vector2(425, 461)
-friction = null
 
 [node name="boksi2" parent="Boksit" instance=ExtResource("4_evucq")]
 position = Vector2(798, 332)
-friction = null
 
 [node name="boksi3" parent="Boksit" instance=ExtResource("4_evucq")]
 position = Vector2(880, 460)
-friction = null
 
 [node name="boksi4" parent="Boksit" instance=ExtResource("4_evucq")]
 position = Vector2(972, 330)
-friction = null
 
 [node name="boksi5" parent="Boksit" instance=ExtResource("4_evucq")]
 position = Vector2(996, 478)
-friction = null
 
 [node name="Pelaaja" parent="." instance=ExtResource("3_so76b")]
 position = Vector2(331, 442)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_4hecm")
