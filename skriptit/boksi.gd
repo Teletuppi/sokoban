@@ -8,6 +8,7 @@ func _ready() -> void:
 		node.body_entered.connect(tippuuu)
 
 func _integrate_forces(_state: PhysicsDirectBodyState2D) -> void:
+	#kitkah
 	linear_velocity *= friction
 	angular_velocity *= friction
 
