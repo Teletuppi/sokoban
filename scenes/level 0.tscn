@@ -123,6 +123,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_e2o6t")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4hecm"]
+size = Vector2(136.625, 138.125)
 
 [node name="Level 0" type="Node2D"]
 
@@ -153,6 +154,9 @@ position = Vector2(996, 478)
 position = Vector2(331, 442)
 
 [node name="Area2D" type="Area2D" parent="."]
+position = Vector2(495, 349)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("RectangleShape2D_4hecm")
+
+[connection signal="body_entered" from="Area2D" to="Boksit/boksi" method="_on_area_2d_body_entered"]

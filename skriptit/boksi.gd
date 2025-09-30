@@ -15,3 +15,7 @@ func _integrate_forces(_state: PhysicsDirectBodyState2D) -> void:
 
 func tippuuu(body):
 	print("GUUGUU", body)
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	print("JEEJEE", body) # Replace with function body.

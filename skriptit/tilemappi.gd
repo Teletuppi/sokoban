@@ -19,6 +19,7 @@ func _ready():
 		add_child(area)
 		area.position = to_global(map_to_local(cell))
 		area.add_to_group("Kolot")
+		"""
 		var collision = CollisionShape2D.new()
 	
 	# Create a rectangle shape (adjust size to your tile size)
@@ -29,3 +30,4 @@ func _ready():
 		collision.shape = rect_shape
 		area.add_child(collision)
 		#print(area.position)
+	"""
