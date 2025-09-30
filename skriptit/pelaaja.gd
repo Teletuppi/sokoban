@@ -1,16 +1,22 @@
 extends RigidBody2D
 @export var speed := 200.0
 # Mihin suuntaa pelaaja katselee :)
-var AlaSprite = preload("res://kenney_sokoban-pack/PNG/Retina/Player/player_05.png")
+var AlaSprite = preload("res://kenney_sokoban-pack/PNG/Retina/Player/player_23.png")
 var YlaSprite = preload("res://kenney_sokoban-pack/PNG/Retina/Player/player_02.png")
 var OikSprite = preload("res://kenney_sokoban-pack/PNG/Retina/Player/player_11.png")
 var VasSprite = preload("res://kenney_sokoban-pack/PNG/Retina/Player/player_14.png")
 
+var skaala = 0.5
+
+func sprite_tiskiin(sprite: Sprite2D) -> void:
+	sprite.scale.x = skaala
+	sprite.scale.y = skaala
+
 func _ready() -> void:
 	lock_rotation = true
+	sprite_tiskiin($Sprite2D)
 	
-	
-# Napsii pelaajan suunnan
+# Napsii pelaajan suunnan #moi nääsilä
 func get_direction():
 	var direction_vector := Vector2.ZERO
 	direction_vector.x = Input.get_action_strength("right") - Input.get_action_strength("left")
@@ -20,7 +26,6 @@ func get_direction():
 func _physics_process(_delta: float) -> void:
 	linear_velocity = get_direction() * speed
 	
-
 func _process(_delta: float) -> void:
 	var direction = get_direction()
 	# Miks niin jäätävä

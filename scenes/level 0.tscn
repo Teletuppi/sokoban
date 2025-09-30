@@ -1,12 +1,12 @@
 [gd_scene load_steps=8 format=4 uid="uid://dcgtch2cy08wl"]
 
-[ext_resource type="Texture2D" uid="uid://so5pcoq1biko" path="res://kenney_sokoban-pack/Tilesheet/sokoban_tilesheet.png" id="2_e2o6t"]
-[ext_resource type="PackedScene" uid="uid://dchub31y4txis" path="res://scenes/pelaaja.tscn" id="2_feb5d"]
-[ext_resource type="Script" uid="uid://b3fex8j1r4vnh" path="res://skriptit/tilemappi.gd" id="2_lbhrr"]
-[ext_resource type="PackedScene" uid="uid://c87qi4l76ip6g" path="res://scenes/boksi.tscn" id="3_lnu2h"]
+[ext_resource type="Texture2D" uid="uid://so5pcoq1biko" path="res://kenney_sokoban-pack/Tilesheet/sokoban_tilesheet.png" id="1_4hecm"]
+[ext_resource type="Script" uid="uid://b3fex8j1r4vnh" path="res://skriptit/tilemappi.gd" id="2_chmqj"]
+[ext_resource type="PackedScene" uid="uid://dchub31y4txis" path="res://scenes/pelaaja.tscn" id="3_so76b"]
+[ext_resource type="PackedScene" uid="uid://c87qi4l76ip6g" path="res://scenes/boksi.tscn" id="4_evucq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e2o6t"]
-texture = ExtResource("2_e2o6t")
+texture = ExtResource("1_4hecm")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 0:1/0 = 0
@@ -122,8 +122,7 @@ tile_size = Vector2i(64, 64)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_e2o6t")
 
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_lnu2h"]
-friction = 0.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4hecm"]
 
 [node name="Level 0" type="Node2D"]
 
@@ -131,25 +130,29 @@ friction = 0.0
 position = Vector2(-824.405, 56.0758)
 tile_map_data = PackedByteArray("AAAQAAcAAAALAAYAAAARAAcAAAALAAYAAAASAAcAAAALAAYAAAATAAcAAAALAAYAAAAUAAcAAAALAAYAAAAUAAYAAAALAAYAAAATAAYAAAALAAYAAAASAAYAAAALAAYAAAARAAYAAAALAAYAAAAQAAYAAAALAAYAAAAQAAUAAAALAAYAAAARAAUAAAALAAYAAAASAAUAAAALAAYAAAATAAUAAAALAAYAAAAUAAUAAAALAAYAAAAQAAQAAAAIAAcAAAARAAQAAAAIAAcAAAAVAAQAAAAIAAcAAAAVAAUAAAAIAAcAAAAVAAgAAAAIAAcAAAAUAAgAAAAIAAcAAAATAAgAAAAIAAcAAAASAAgAAAAIAAcAAAARAAgAAAAIAAcAAAAQAAgAAAAIAAcAAAAPAAgAAAAIAAcAAAAPAAcAAAAIAAcAAAAPAAYAAAAIAAcAAAAPAAUAAAAIAAcAAAAPAAQAAAAIAAcAAAAVAAMAAAAIAAcAAAAVAAIAAAAIAAcAAAAVAAAAAAAIAAcAAAAUAAAAAAAIAAcAAAATAAAAAAAIAAcAAAATAAIAAAAIAAcAAAATAAMAAAAIAAcAAAATAAQAAAAIAAcAAAARAAMAAAAIAAcAAAARAAIAAAAIAAcAAAARAAEAAAAIAAcAAAARAAAAAAAIAAcAAAASAAAAAAAIAAcAAAAXAAAAAAAIAAcAAAAXAAYAAAAIAAcAAAAXAAUAAAAIAAcAAAAYAAIAAAAIAAcAAAAZAAIAAAAIAAcAAAAZAAEAAAAIAAcAAAAZAAAAAAAIAAcAAAAZAP//AAAIAAcAAAAZAP7/AAAIAAcAAAAYAP7/AAAIAAcAAAAXAP7/AAAIAAcAAAAWAP7/AAAIAAcAAAAVAP7/AAAIAAcAAAAVAP//AAAIAAcAAAAVAAYAAAALAAYAAAAWAAYAAAALAAYAAAAWAAUAAAALAAAAAAAWAAQAAAALAAYAAAAWAAMAAAALAAYAAAAWAAIAAAALAAYAAAAXAAMAAAAIAAcAAAAXAAIAAAAIAAcAAAAXAAEAAAALAAYAAAAXAAQAAAAIAAcAAAAYAAEAAAALAAYAAAAYAAAAAAALAAYAAAAYAP//AAALAAYAAAAXAP//AAALAAYAAAAWAP//AAALAAYAAAAWAAAAAAALAAYAAAAWAAEAAAALAAYAAAAVAAEAAAALAAYAAAAUAAEAAAALAAYAAAAUAAIAAAALAAYAAAAUAAMAAAALAAYAAAAUAAQAAAALAAYAAAATAAEAAAALAAYAAAASAAEAAAALAAYAAAASAAIAAAALAAYAAAASAAMAAAALAAYAAAASAAQAAAALAAYAAAAWAAgAAAAIAAcAAAAXAAgAAAAIAAcAAAAYAAgAAAAIAAcAAAAZAAgAAAAIAAcAAAAaAAgAAAAIAAcAAAAbAAgAAAAIAAcAAAAcAAgAAAAIAAcAAAAdAAgAAAAIAAcAAAAeAAgAAAAIAAcAAAAeAAcAAAAIAAcAAAAeAAYAAAAIAAcAAAAeAAUAAAAIAAcAAAAeAAQAAAAIAAcAAAAeAAMAAAAIAAcAAAAeAAIAAAAIAAcAAAAdAAIAAAAIAAcAAAAcAAIAAAAIAAcAAAAbAAIAAAAIAAcAAAAaAAIAAAAIAAcAAAAVAAcAAAALAAYAAAAWAAcAAAALAAYAAAAXAAcAAAALAAYAAAAYAAcAAAALAAYAAAAYAAYAAAALAAYAAAAYAAUAAAALAAYAAAAZAAUAAAALAAYAAAAZAAQAAAALAAYAAAAYAAQAAAALAAYAAAAYAAMAAAALAAYAAAAZAAMAAAALAAYAAAAaAAMAAAALAAYAAAAbAAMAAAALAAYAAAAcAAMAAAALAAYAAAAdAAMAAAALAAYAAAAdAAQAAAALAAYAAAAdAAUAAAALAAYAAAAdAAYAAAALAAYAAAAdAAcAAAALAAAAAAAcAAcAAAALAAYAAAAbAAcAAAALAAYAAAAaAAcAAAALAAYAAAAZAAcAAAALAAYAAAAZAAYAAAALAAYAAAAaAAYAAAALAAYAAAAbAAYAAAALAAYAAAAcAAYAAAALAAYAAAAcAAUAAAALAAYAAAAcAAQAAAALAAYAAAAbAAQAAAALAAYAAAAaAAQAAAALAAYAAAAaAAUAAAALAAYAAAAbAAUAAAALAAYAAAA=")
 tile_set = SubResource("TileSet_feb5d")
-script = ExtResource("2_lbhrr")
-
-[node name="Pelaaja" parent="." instance=ExtResource("2_feb5d")]
-position = Vector2(320, 475)
-physics_material_override = SubResource("PhysicsMaterial_lnu2h")
+script = ExtResource("2_chmqj")
 
 [node name="Boksit" type="Node" parent="."]
 
-[node name="boksi" parent="Boksit" instance=ExtResource("3_lnu2h")]
+[node name="boksi" parent="Boksit" instance=ExtResource("4_evucq")]
 position = Vector2(425, 461)
 
-[node name="boksi2" parent="Boksit" instance=ExtResource("3_lnu2h")]
+[node name="boksi2" parent="Boksit" instance=ExtResource("4_evucq")]
 position = Vector2(798, 332)
 
-[node name="boksi3" parent="Boksit" instance=ExtResource("3_lnu2h")]
+[node name="boksi3" parent="Boksit" instance=ExtResource("4_evucq")]
 position = Vector2(880, 460)
 
-[node name="boksi4" parent="Boksit" instance=ExtResource("3_lnu2h")]
+[node name="boksi4" parent="Boksit" instance=ExtResource("4_evucq")]
 position = Vector2(972, 330)
 
-[node name="boksi5" parent="Boksit" instance=ExtResource("3_lnu2h")]
+[node name="boksi5" parent="Boksit" instance=ExtResource("4_evucq")]
 position = Vector2(996, 478)
+
+[node name="Pelaaja" parent="." instance=ExtResource("3_so76b")]
+position = Vector2(331, 442)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_4hecm")

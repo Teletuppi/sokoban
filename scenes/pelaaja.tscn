@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dchub31y4txis"]
 
-[ext_resource type="Texture2D" uid="uid://1j272w87jc6p" path="res://kenney_sokoban-pack/PNG/Default size/Player/player_01.png" id="1_omcq3"]
 [ext_resource type="Script" uid="uid://bf8ijh2xh2eev" path="res://skriptit/pelaaja.gd" id="1_ph81f"]
+[ext_resource type="Texture2D" uid="uid://ccu72s0ga2jw5" path="res://kenney_sokoban-pack/PNG/Retina/Player/player_23.png" id="2_rbvrm"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_rbvrm"]
 friction = 0.0
@@ -14,11 +14,10 @@ physics_material_override = SubResource("PhysicsMaterial_rbvrm")
 gravity_scale = 0.0
 script = ExtResource("1_ph81f")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-z_index = 100
-texture = ExtResource("1_omcq3")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1.4305115e-06, 15.225124)
 scale = Vector2(2.9676447, -2.763941)
 shape = SubResource("RectangleShape2D_wtq13")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_rbvrm")
