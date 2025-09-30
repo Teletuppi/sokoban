@@ -150,6 +150,9 @@ friction = null
 
 [node name="boksi5" parent="Boksit" instance=ExtResource("4_evucq")]
 position = Vector2(996, 478)
+friction = null
+
 
 [node name="Pelaaja" parent="." instance=ExtResource("3_so76b")]
 position = Vector2(331, 442)
+
