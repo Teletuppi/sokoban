@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=4 uid="uid://dcgtch2cy08wl"]
 
 [ext_resource type="Texture2D" uid="uid://so5pcoq1biko" path="res://kenney_sokoban-pack/Tilesheet/sokoban_tilesheet.png" id="1_4hecm"]
-[ext_resource type="Script" path="res://skriptit/tilemappi.gd" id="2_chmqj"]
+[ext_resource type="Script" uid="uid://b3fex8j1r4vnh" path="res://skriptit/tilemappi.gd" id="2_chmqj"]
 [ext_resource type="PackedScene" uid="uid://dchub31y4txis" path="res://scenes/pelaaja.tscn" id="3_so76b"]
 [ext_resource type="PackedScene" uid="uid://c87qi4l76ip6g" path="res://scenes/boksi.tscn" id="4_evucq"]
 
@@ -134,18 +134,22 @@ script = ExtResource("2_chmqj")
 
 [node name="boksi" parent="Boksit" instance=ExtResource("4_evucq")]
 position = Vector2(425, 461)
+friction = null
 
 [node name="boksi2" parent="Boksit" instance=ExtResource("4_evucq")]
 position = Vector2(798, 332)
+friction = null
 
 [node name="boksi3" parent="Boksit" instance=ExtResource("4_evucq")]
 position = Vector2(880, 460)
+friction = null
 
 [node name="boksi4" parent="Boksit" instance=ExtResource("4_evucq")]
 position = Vector2(972, 330)
+friction = null
 
 [node name="boksi5" parent="Boksit" instance=ExtResource("4_evucq")]
 position = Vector2(996, 478)
 
 [node name="Pelaaja" parent="." instance=ExtResource("3_so76b")]
-position = Vector2(346, 412)
+position = Vector2(331, 442)
