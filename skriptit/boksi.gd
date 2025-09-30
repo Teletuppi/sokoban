@@ -10,7 +10,7 @@ func _ready() -> void:
 func _integrate_forces(_state: PhysicsDirectBodyState2D) -> void:
 	linear_velocity *= friction
 	angular_velocity *= friction
-	
+
 
 func tippuuu(body):
 	print("GUUGUU", body)
