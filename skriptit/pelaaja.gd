@@ -1,5 +1,5 @@
 extends RigidBody2D
-@export var speed := 200.0
+@export var speed := 40.0
 # Mihin suuntaa pelaaja katselee :)
 var AlaSprite = preload("res://kenney_sokoban-pack/PNG/Retina/Player/player_23.png")
 var YlaSprite = preload("res://kenney_sokoban-pack/PNG/Retina/Player/player_02.png")
