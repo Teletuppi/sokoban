@@ -17,7 +17,6 @@ func tippuuu(body):
 	print("GUUGUUJEEJEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE", body)
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	print("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
 	if body.is_in_group("Kolot"):
 		print("JEEJEE", body) # Replace with function body.
 		lähellä = true
