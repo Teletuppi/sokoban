@@ -26,19 +26,14 @@ func get_direction():
 func _physics_process(_delta: float) -> void:
 	linear_velocity = get_direction() * speed
 	
-
 func _process(delta: float) -> void:
 	var direction = get_direction()
 	# Miks niin jäätävä
 	if direction.x > 0:
 		$Sprite2D.texture = OikSprite
-		sprite_tiskiin($Sprite2D)
 	elif direction.x < 0:
 		$Sprite2D.texture = VasSprite
-		sprite_tiskiin($Sprite2D)
 	if direction.y > 0:
 		$Sprite2D.texture = AlaSprite
-		sprite_tiskiin($Sprite2D)
 	elif direction.y < 0:
 		$Sprite2D.texture = YlaSprite	
-		sprite_tiskiin($Sprite2D)
