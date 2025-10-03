@@ -1,5 +1,5 @@
 extends RigidBody2D
-@export var speed := 200.0
+@export var speed := 40.0
 # Mihin suuntaa pelaaja katselee :)
 var AlaSprite = preload("res://kenney_sokoban-pack/PNG/Retina/Player/player_23.png")
 var YlaSprite = preload("res://kenney_sokoban-pack/PNG/Retina/Player/player_02.png")
@@ -26,7 +26,7 @@ func get_direction():
 func _physics_process(_delta: float) -> void:
 	linear_velocity = get_direction() * speed
 	
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	var direction = get_direction()
 	# Miks niin jäätävä
 	if direction.x > 0:
