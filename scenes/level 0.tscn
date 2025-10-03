@@ -136,6 +136,7 @@ script = ExtResource("2_chmqj")
 [node name="Boksit" type="Node" parent="."]
 
 [node name="boksi" parent="Boksit" instance=ExtResource("4_evucq")]
+position = Vector2(488, 469)
 
 [node name="boksi2" parent="Boksit" instance=ExtResource("4_evucq")]
 position = Vector2(816, 338)
