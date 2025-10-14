@@ -18,35 +18,23 @@ func _ready():
 	#print(matching_positions)
 	for cell in matching_positions:
 		var area = Area2D.new()
-<<<<<<< HEAD
 		
 		area.position = map_to_local(cell)
 		area.add_to_group("Kolot")
 
-=======
-		add_child(area)
-		area.position = map_to_local(cell)
-		area.add_to_group("Kolot")
-		
->>>>>>> 5ff968c965781b33d2db7453b8b1a5cc1814ad44
+
 		var collision = CollisionShape2D.new()
 		collision.name = "kollision"
 		var rect_shape = RectangleShape2D.new()
 		rect_shape.size = Vector2(64, 64)  # <-- replace with your tile size
-<<<<<<< HEAD
-
-=======
 	
 	# Assign shape to collision and add as child
->>>>>>> 5ff968c965781b33d2db7453b8b1a5cc1814ad44
+
 		collision.shape = rect_shape
 		area.add_child(collision)
 		print(collision.position, "TÄMÄ ON OIKEASTIKKIN TÄRKEÄ ei oikeesti mätiääss vaan sanoi")
 		
 		add_child(area)
 		#print(area.position)
-<<<<<<< HEAD
+
 	reiätvalmiit.emit()
-=======
-	
->>>>>>> 5ff968c965781b33d2db7453b8b1a5cc1814ad44

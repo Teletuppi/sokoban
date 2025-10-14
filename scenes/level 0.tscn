@@ -127,11 +127,9 @@ sources/0 = SubResource("TileSetAtlasSource_e2o6t")
 [node name="Boksit" type="Node" parent="."]
 
 [node name="boksi" parent="Boksit" instance=ExtResource("4_evucq")]
-<<<<<<< HEAD
+
 position = Vector2(1333, 415)
-=======
-position = Vector2(488, 469)
->>>>>>> 5ff968c965781b33d2db7453b8b1a5cc1814ad44
+
 
 [node name="boksi2" parent="Boksit" instance=ExtResource("4_evucq")]
 position = Vector2(1294, 341)
