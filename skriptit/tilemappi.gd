@@ -2,6 +2,7 @@ extends TileMapLayer
 var testi = 2
 @export var target_atlas_coords: Vector2i = Vector2i(11, 0)
 var matching_positions: Array = []
+signal reiätvalmiit
 
 func _ready():
 	for cell in get_used_cells():
@@ -17,17 +18,19 @@ func _ready():
 	#print(matching_positions)
 	for cell in matching_positions:
 		var area = Area2D.new()
-		print(area.position, "VOIKAKKAAAAA")
+		
 		area.position = map_to_local(cell)
-		print(area.position, "HEI; OLEN TÄÄLLÄ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa!")
 		area.add_to_group("Kolot")
+
 		var collision = CollisionShape2D.new()
 		collision.name = "kollision"
 		var rect_shape = RectangleShape2D.new()
 		rect_shape.size = Vector2(64, 64)  # <-- replace with your tile size
+
 		collision.shape = rect_shape
 		area.add_child(collision)
 		print(collision.position, "TÄMÄ ON OIKEASTIKKIN TÄRKEÄ ei oikeesti mätiääss vaan sanoi")
 		
 		add_child(area)
 		#print(area.position)
+	reiätvalmiit.emit()
