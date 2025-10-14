@@ -11,23 +11,23 @@ func _ready():
 		
 		if source_id == 0 and atlas_coords == target_atlas_coords:
 			matching_positions.append(cell)
+	print("TÄMÄONTÄRKEÄÄÄ!!", matching_positions)
 
 	#print("Found ", matching_positions.size(), " matching tiles: ", matching_positions)
 	#print(matching_positions)
 	for cell in matching_positions:
 		var area = Area2D.new()
-		add_child(area)
-		area.position = to_global(map_to_local(cell))
+		print(area.position, "VOIKAKKAAAAA")
+		area.position = map_to_local(cell)
+		print(area.position, "HEI; OLEN TÄÄLLÄ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa!")
 		area.add_to_group("Kolot")
-		"""
 		var collision = CollisionShape2D.new()
-	
-	# Create a rectangle shape (adjust size to your tile size)
+		collision.name = "kollision"
 		var rect_shape = RectangleShape2D.new()
-		rect_shape.size = Vector2(1, 1)  # <-- replace with your tile size
-	
-	# Assign shape to collision and add as child
+		rect_shape.size = Vector2(64, 64)  # <-- replace with your tile size
 		collision.shape = rect_shape
 		area.add_child(collision)
+		print(collision.position, "TÄMÄ ON OIKEASTIKKIN TÄRKEÄ ei oikeesti mätiääss vaan sanoi")
+		
+		add_child(area)
 		#print(area.position)
-	"""
