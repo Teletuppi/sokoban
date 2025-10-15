@@ -26,7 +26,6 @@ func _reiitetään() -> void:
 	
 	
 func _integrate_forces(_state: PhysicsDirectBodyState2D) -> void:
-	#kitkah
 	kitkah()
 
 func kitkah() -> void:
