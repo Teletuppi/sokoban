@@ -12,17 +12,20 @@ signal reiässä
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	print(Tilemapsi.reiätvalmiit)
+	#print(Tilemapsi.reiätvalmiit)
 	Tilemapsi.reiätvalmiit.connect(_reiitetään)
+	print(get_node("/root/TasoJohtaja").get_child(0), "  tää on readyssä ")
+
 
 func _reiitetään() -> void:
-	print("AOOOOOOOOOOOOOOO SE")
+	#print("AOOOOOOOOOOOOOOO SE")
 	for node in get_tree().get_nodes_in_group("Kolot"):
 		print(node)
+		print(get_node("/root/TasoJohtaja").get_child(0))
 		Areat.append(node)
 		#node.body_entered.connect(tippuuu)
-		print(node, node.position, "   ja sit kollisionshape:   ", node.get_child(0).position)
-	print("AAUUAA", Areat)
+		#print(node, node.position, "   ja sit kollisionshape:   ", node.get_child(0).position)
+	#print("AAUUAA", Areat)
 	
 	
 func _integrate_forces(_state: PhysicsDirectBodyState2D) -> void:

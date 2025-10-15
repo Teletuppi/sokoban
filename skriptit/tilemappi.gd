@@ -12,7 +12,7 @@ func _ready():
 		
 		if source_id == 0 and atlas_coords == target_atlas_coords:
 			matching_positions.append(cell)
-	print("TÄMÄONTÄRKEÄÄÄ!!", matching_positions)
+	#print("TÄMÄONTÄRKEÄÄÄ!!", matching_positions)
 
 	#print("Found ", matching_positions.size(), " matching tiles: ", matching_positions)
 	#print(matching_positions)
@@ -32,7 +32,7 @@ func _ready():
 
 		collision.shape = rect_shape
 		area.add_child(collision)
-		print(collision.position, "TÄMÄ ON OIKEASTIKKIN TÄRKEÄ ei oikeesti mätiääss vaan sanoi")
+		#print(collision.position, "TÄMÄ ON OIKEASTIKKIN TÄRKEÄ ei oikeesti mätiääss vaan sanoi")
 		
 		add_child(area)
 		#print(area.position)
