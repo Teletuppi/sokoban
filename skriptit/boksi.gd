@@ -20,13 +20,15 @@ func _reiitetään() -> void:
 	for node in get_tree().get_nodes_in_group("Kolot"):
 		print(node)
 		Areat.append(node)
-		#node.body_entered.connect(tippuuu)
 		print(node, node.position, "   ja sit kollisionshape:   ", node.get_child(0).position)
 	print("AAUUAA", Areat)
 	
 	
 func _integrate_forces(_state: PhysicsDirectBodyState2D) -> void:
 	#kitkah
+	kitkah()
+
+func kitkah() -> void:
 	linear_velocity *= friction
 	angular_velocity *= friction
 
@@ -36,8 +38,6 @@ func tippuuu(body):
 	queue_free()
 	pass
 
-
-		
 func _process(_delta):
 	for Area in Areat:
 		var areacollision = Area.get_child(0)
