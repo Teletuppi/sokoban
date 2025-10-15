@@ -4,7 +4,8 @@ var lähellä = false
 var lähikolot := []
 var taikanumero = 0.5905303955
 var hengityshuone = 1.1
-@onready var Tilemapsi = get_node("/root/Level 0/TileMapLayer")
+@onready var Tilemapsi = get_node("/root/TasoJohtaja").get_child(0).get_node("TileMapLayer")
+
 var Areat = []
 @onready var collisionbox = $CollisionShape2D
 signal reiässä

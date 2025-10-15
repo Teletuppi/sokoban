@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://lc1x1od8aqof"]
+
+[ext_resource type="Script" uid="uid://coikhvin7u5mk" path="res://skriptit/taso_johtaja.gd" id="1_n8d8o"]
+[ext_resource type="PackedScene" uid="uid://dcgtch2cy08wl" path="res://levels/level_0.tscn" id="2_v2kj6"]
+
+[node name="TasoJohtaja" type="Node"]
+script = ExtResource("1_n8d8o")
+
+[node name="level 0" parent="." instance=ExtResource("2_v2kj6")]
