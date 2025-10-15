@@ -23,14 +23,6 @@ func _reiitetään() -> void:
 		print(node)
 		print(get_node("/root/TasoJohtaja").get_child(0))
 		Areat.append(node)
-<<<<<<< HEAD
-		#node.body_entered.connect(tippuuu)
-		#print(node, node.position, "   ja sit kollisionshape:   ", node.get_child(0).position)
-	#print("AAUUAA", Areat)
-=======
-		print(node, node.position, "   ja sit kollisionshape:   ", node.get_child(0).position)
-	print("AAUUAA", Areat)
->>>>>>> 1e9dbed302ee7a25ef19051dc7dfa6c519306b73
 	
 	
 func _integrate_forces(_state: PhysicsDirectBodyState2D) -> void:

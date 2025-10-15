@@ -12,10 +12,6 @@ func _ready() -> void:
 	
 
 func load_level(path: String):
-<<<<<<< HEAD
-	print(current_level, "  no voi hemmeetii")
-=======
->>>>>>> 1e9dbed302ee7a25ef19051dc7dfa6c519306b73
 	if current_level:
 		current_level.queue_free()
 		await get_tree().process_frame
