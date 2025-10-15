@@ -14,6 +14,7 @@ func sprite_tiskiin(sprite: Sprite2D) -> void:
 
 func _ready() -> void:
 	lock_rotation = true
+	z_index = 99
 	sprite_tiskiin($Sprite2D)
 	
 # Napsii pelaajan suunnan #moi nääsilä
