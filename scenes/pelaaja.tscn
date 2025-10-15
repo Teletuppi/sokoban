@@ -7,16 +7,17 @@
 friction = 0.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wtq13"]
-size = Vector2(12.804766, 6.6753407)
+size = Vector2(12.804766, 8.846153)
 
 [node name="Pelaaja" type="RigidBody2D"]
 physics_material_override = SubResource("PhysicsMaterial_rbvrm")
 gravity_scale = 0.0
 script = ExtResource("1_ph81f")
+speed = 200.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1.4305115e-06, 15.225124)
-scale = Vector2(2.9676447, -2.763941)
+position = Vector2(1.4305115e-06, 12.225124)
+scale = Vector2(2.75, -2.764)
 shape = SubResource("RectangleShape2D_wtq13")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
