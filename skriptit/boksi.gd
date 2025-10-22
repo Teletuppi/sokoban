@@ -4,7 +4,8 @@ var lähellä = false
 var lähikolot := []
 var taikanumero = 0.5905303955
 var hengityshuone = 1.1
-@onready var Tilemapsi = get_node("/root/TasoJohtaja").get_child(0).get_node("TileMapLayer")
+@onready var tasojohtaja = $/root/TasoJohtaja
+@onready var Tilemapsi: TileMapLayer = get_node("/root/TasoJohtaja/leveli").get_child(0).get_node("TileMapLayer")
 
 var Areat = []
 @onready var collisionbox = $CollisionShape2D
@@ -12,6 +13,8 @@ signal reiässä
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	tasojohtaja.print_tree()
+	print("TÄTÄ ENNE JEEJEE puu")
 	#print(Tilemapsi.reiätvalmiit)
 	Tilemapsi.reiätvalmiit.connect(_reiitetään)
 	#print(get_node("/root/TasoJohtaja").get_child(1), "  tää on readyssä ")
@@ -33,14 +36,18 @@ func kitkah() -> void:
 	linear_velocity *= friction
 	angular_velocity *= friction
 
-func tippuuu(body):
+func tippuuu(Area):
 	var atlascoords = Vector2(1, 0)
 	reiässä.emit(position, atlascoords)
 	queue_free()
+	Area.queue_free()
+	Tilemapsi.set_cell()
 	pass
 
 func _process(_delta):
 	for Area in Areat:
+		if Area == null:
+			break
 		var areacollision = Area.get_child(0)
 
 		#print("öh ", "positionit: ", Area.position, areacollision.position, " globaalit: ", to_global(), to_local(Area.position), to_global(areacollision), to_local(areacollision))
@@ -48,5 +55,6 @@ func _process(_delta):
 		#if(sqrt(pow(Area.position.x - position.x, 2) + pow(Area.position.y - position.y, 2)) + (scale.x * 64 / 2 + scale.x * 64 / 2 * sqrt(pow(scale.x * 64 / 2, 2) + pow(scale.x * 64 / 2, 2))) * cos(rotation_degrees / 180 * PI) < areacollision.scale.x * 64 / 2 + scale.x * 64 / 2):
 		#if(sqrt(pow(Area.position.x - position.x, 2) + pow(Area.position.y - position.y, 2)) < 200):
 			print("JOUJOUUU")
-			tippuuu(self)
+			Areat.erase(Area)
+			tippuuu(Area)
 			

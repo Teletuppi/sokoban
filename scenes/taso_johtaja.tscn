@@ -4,3 +4,5 @@
 
 [node name="TasoJohtaja" type="Node"]
 script = ExtResource("1_n8d8o")
+
+[node name="leveli" type="Node" parent="."]
