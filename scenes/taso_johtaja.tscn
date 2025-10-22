@@ -1,8 +1,24 @@
-[gd_scene load_steps=2 format=3 uid="uid://lc1x1od8aqof"]
+[gd_scene load_steps=3 format=3 uid="uid://lc1x1od8aqof"]
 
 [ext_resource type="Script" uid="uid://coikhvin7u5mk" path="res://skriptit/taso_johtaja.gd" id="1_n8d8o"]
+[ext_resource type="Texture2D" uid="uid://byvugrn3fheqb" path="res://kenney_sokoban-pack/PNG/Default size/playerFace.png" id="2_v2kj6"]
 
 [node name="TasoJohtaja" type="Node"]
 script = ExtResource("1_n8d8o")
 
 [node name="leveli" type="Node" parent="."]
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ItemList" type="ItemList" parent="UI"]
+layout_mode = 0
+offset_right = 162.30414
+offset_bottom = 113.10533
+scale = Vector2(2.5754116, 1.7771045)
+item_count = 1
+item_0/text = "wouwou"
+item_0/icon = ExtResource("2_v2kj6")

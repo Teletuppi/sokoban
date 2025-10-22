@@ -41,7 +41,7 @@ func tippuuu(Area):
 	reiässä.emit(position, atlascoords)
 	queue_free()
 	Area.queue_free()
-	Tilemapsi.set_cell(Vector2(0, 0), -1, Vector2i(10, 0))
+	Tilemapsi.set_cell(Tilemapsi.local_to_map(Area.position), 0, Vector2i(6, 4))
 	pass
 
 func _process(_delta):
