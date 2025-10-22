@@ -14,14 +14,14 @@ signal reiässä
 func _ready() -> void:
 	#print(Tilemapsi.reiätvalmiit)
 	Tilemapsi.reiätvalmiit.connect(_reiitetään)
-	print(get_node("/root/TasoJohtaja").get_child(0), "  tää on readyssä ")
+	#print(get_node("/root/TasoJohtaja").get_child(1), "  tää on readyssä ")
 
 
 func _reiitetään() -> void:
 	#print("AOOOOOOOOOOOOOOO SE")
 	for node in get_tree().get_nodes_in_group("Kolot"):
-		print(node)
-		print(get_node("/root/TasoJohtaja").get_child(0))
+		#print(node)
+		#print(get_node("/root/TasoJohtaja").get_child(0))
 		Areat.append(node)
 	
 	
