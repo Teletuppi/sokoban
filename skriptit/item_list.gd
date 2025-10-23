@@ -7,7 +7,6 @@ func levelit_listaan() -> void:
 		var level = "level_" + str(laskin)
 		path = "res://levels/" + level + ".tscn"
 		laskin += 1
-		print("MEGA PATH YHISTYS " + path)
 		if ResourceLoader.exists(path):
 			add_item(level)
 	#var new_level = load(path).instantiate()

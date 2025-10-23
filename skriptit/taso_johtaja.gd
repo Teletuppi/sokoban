@@ -11,12 +11,12 @@ func load_signal_level(idx, _position, _mousebuttonn):
 	if _mousebuttonn == MOUSE_BUTTON_LEFT:
 		var path = "res://levels/Level_" + str(idx-1) + ".tscn"
 		load_level(path)
+		
 
 
 
 func load_level(path: String):
 	print("ladattiin leveilili!")
-	print_tree()
 	if current_level:
 		current_level.queue_free()
 		await get_tree().process_frame
@@ -40,5 +40,3 @@ func avaa_sulje_pause(path: String):
 	else:
 		get_node("UI/PauseMenu").queue_free()
 		olemassa = false
-	print_tree()
-	print("täs printataaaaaaaaaaaa")

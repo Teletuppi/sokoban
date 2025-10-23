@@ -13,8 +13,8 @@ signal reiässä
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	print("skene puu: ")
 	tasojohtaja.print_tree()
-	print("TÄTÄ ENNE JEEJEE puu")
 	#print(Tilemapsi.reiätvalmiit)
 	Tilemapsi.reiätvalmiit.connect(_reiitetään)
 	#print(get_node("/root/TasoJohtaja").get_child(1), "  tää on readyssä ")
