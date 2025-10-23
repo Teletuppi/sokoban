@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h5ssj"]
 size = Vector2(21.333334, 21.333334)
 
-[node name="boksi" type="RigidBody2D" groups=["boksit"]]
+[node name="boksi" type="RigidBody2D"]
 gravity_scale = 0.0
 script = ExtResource("1_b4j6o")
 
