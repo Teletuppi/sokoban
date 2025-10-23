@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://cx84hp02mv5vw"]
+[gd_scene load_steps=3 format=3 uid="uid://36yqgbpudvxa"]
 
 [ext_resource type="Texture2D" uid="uid://byvugrn3fheqb" path="res://kenney_sokoban-pack/PNG/Default size/playerFace.png" id="1_fyqef"]
-[ext_resource type="Script" uid="uid://bvgdkc1nymjv7" path="res://skriptit/item_list.gd" id="2_x4jx1"]
+[ext_resource type="Script" path="res://skriptit/item_list.gd" id="2_x4jx1"]
 
 [node name="ui" type="Control"]
 layout_mode = 3
