@@ -145,5 +145,3 @@ script = ExtResource("3_5hph3")
 
 [node name="Pelaaja" parent="." instance=ExtResource("4_j7kpp")]
 position = Vector2(79, -118)
-
-[node name="Camera2D" type="Camera2D" parent="."]
