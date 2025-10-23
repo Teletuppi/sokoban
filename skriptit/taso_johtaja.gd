@@ -3,6 +3,7 @@ extends Node
 @onready var current_level: Node = null
 @onready var buttoon: Button = $Button
 @onready var leveli: Node = $leveli
+var olemassa = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	load_level("res://levels/Level_0.tscn")
@@ -22,6 +23,18 @@ func load_level(path: String):
 	var new_level = load(path).instantiate()
 	leveli.add_child(new_level)
 	current_level = new_level
-
-func avaa_ui(path: String):
 	
+func _process(float) -> void:
+	if Input.is_action_just_pressed("esci"):
+		avaa_sulje_ui("res://scenes/ui.tscn")
+
+func avaa_sulje_ui(path: String):
+	var UI: = load(path)
+	if olemassa == false:
+		add_child(UI.instantiate())
+		olemassa = true
+	else:
+		get_node("ui").queue_free()
+		olemassa = false
+	print_tree()
+	print("täs printataaaaaaaaaaaa")
