@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://cx84hp02mv5vw"]
+[gd_scene load_steps=2 format=3 uid="uid://cx84hp02mv5vw"]
+
+[ext_resource type="Texture2D" uid="uid://byvugrn3fheqb" path="res://kenney_sokoban-pack/PNG/Default size/playerFace.png" id="1_fyqef"]
 
 [node name="ui" type="Control"]
 layout_mode = 3
@@ -7,3 +9,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="ItemList" type="ItemList" parent="."]
+layout_mode = 0
+offset_right = 162.30414
+offset_bottom = 113.10533
+scale = Vector2(2.5754116, 1.7771045)
+item_count = 1
+item_0/text = "wouwou"
+item_0/icon = ExtResource("1_fyqef")

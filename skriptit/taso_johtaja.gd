@@ -1,6 +1,7 @@
 extends Node
 #@onready var current_level: Node = $"level 0"
 @onready var current_level: Node = null
+@onready var buttoon: Button = $Button
 @onready var leveli: Node = $leveli
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -22,4 +23,5 @@ func load_level(path: String):
 	leveli.add_child(new_level)
 	current_level = new_level
 
-func 
+func avaa_ui(path: String):
+	
