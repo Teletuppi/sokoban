@@ -20,6 +20,7 @@ func load_level(path: String):
 	current_level.queue_free()
 	while is_instance_valid(current_level):
 		await get_tree().process_frame
+		print("GAGAGAGA")
 	var new_level = load(path).instantiate()
 	leveli.add_child(new_level)
 	current_level = new_level
