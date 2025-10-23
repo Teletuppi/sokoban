@@ -1,7 +1,5 @@
 extends Node
-#@onready var current_level: Node = $"level 0"
 @onready var current_level: Node = null
-@onready var buttoon: Button = $Button
 @onready var leveli: Node = $leveli
 
 var olemassa = false
