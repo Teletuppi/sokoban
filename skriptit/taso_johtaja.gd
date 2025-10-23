@@ -23,5 +23,5 @@ func load_level(path: String):
 	leveli.add_child(new_level)
 	current_level = new_level
 
-func avaa_ui(path: String):
+# func avaa_ui(path: String):
 	
