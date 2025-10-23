@@ -1,5 +1,5 @@
 extends Node
-@onready var current_level: Node = null
+@onready var current_level = load("res://levels/Level_0.tscn").instantiate()
 @onready var leveli: Node = $leveli
 
 var olemassa = false
@@ -16,9 +16,9 @@ func load_signal_level(idx, _position, _mousebuttonn):
 
 
 func load_level(path: String):
-	print("ladattiin leveilili!")
-	if current_level:
-		current_level.queue_free()
+	print("ladattiin leveilili! CURRENT LEVEL ON: " + str(current_level))
+	current_level.queue_free()
+	while is_instance_valid(current_level):
 		await get_tree().process_frame
 	var new_level = load(path).instantiate()
 	leveli.add_child(new_level)
