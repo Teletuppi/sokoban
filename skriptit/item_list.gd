@@ -2,12 +2,19 @@ extends ItemList
 
 func levelit_listaan() -> void:
 	var laskin = 0
+	var path = "res://levels/Level_" + str(laskin) + ".tscn"
+	while load(path) != null:
+		var level = "level_" + str(laskin)
+		path = "res://levels/" + level + ".tscn"
+		laskin += 1
+		print("MEGA PATH YHISTYS " + path)
+		add_item(level)
 	#var new_level = load(path).instantiate()
 	#leveli.add_child(new_level)
-	var path = "res://levels/Level_+" + laskin + ".tscn"
-	print("MEGA PATH YHISTYS " + path)
+	
+	
 	pass
 
 func _ready() -> void:
-	
+	levelit_listaan()
 	pass

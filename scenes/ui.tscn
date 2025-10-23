@@ -1,11 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cx84hp02mv5vw"]
 
-<<<<<<< HEAD
-[ext_resource type="Texture2D" uid="uid://byvugrn3fheqb" path="res://kenney_sokoban-pack/PNG/Default size/playerFace.png" id="1_nt7q6"]
-=======
 [ext_resource type="Texture2D" uid="uid://byvugrn3fheqb" path="res://kenney_sokoban-pack/PNG/Default size/playerFace.png" id="1_fyqef"]
 [ext_resource type="Script" uid="uid://bvgdkc1nymjv7" path="res://skriptit/item_list.gd" id="2_x4jx1"]
->>>>>>> bce83918f65f00ad95a7f0592371894db8668f4d
 
 [node name="ui" type="Control"]
 layout_mode = 3
@@ -22,9 +18,5 @@ offset_bottom = 113.10533
 scale = Vector2(2.5754116, 1.7771045)
 item_count = 1
 item_0/text = "wouwou"
-<<<<<<< HEAD
-item_0/icon = ExtResource("1_nt7q6")
-=======
 item_0/icon = ExtResource("1_fyqef")
 script = ExtResource("2_x4jx1")
->>>>>>> bce83918f65f00ad95a7f0592371894db8668f4d
