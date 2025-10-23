@@ -1,7 +1,6 @@
 extends Node
 #@onready var current_level: Node = $"level 0"
 @onready var current_level: Node = null
-@onready var buttoon: Button = $Button
 @onready var leveli: Node = $leveli
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
