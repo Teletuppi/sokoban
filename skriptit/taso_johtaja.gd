@@ -8,8 +8,10 @@ func _ready() -> void:
 	load_level("res://levels/Level_0.tscn")
 
 func load_signal_level(idx, _position, _mousebuttonn):
-	var path = "res://levels/Level_" + str(idx-1) + ".tscn"
-	load_level(path)
+	if _mousebuttonn == MOUSE_BUTTON_LEFT:
+		var path = "res://levels/Level_" + str(idx-1) + ".tscn"
+		load_level(path)
+
 
 
 func load_level(path: String):

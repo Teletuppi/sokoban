@@ -8,7 +8,8 @@ func levelit_listaan() -> void:
 		path = "res://levels/" + level + ".tscn"
 		laskin += 1
 		print("MEGA PATH YHISTYS " + path)
-		add_item(level)
+		if load(path) != null:
+			add_item(level)
 	#var new_level = load(path).instantiate()
 	#leveli.add_child(new_level)
 	
