@@ -15,10 +15,10 @@ grow_vertical = 2
 [node name="ItemList" type="ItemList" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_right = 0.363
-anchor_bottom = 0.31
-offset_right = -255.87186
-offset_bottom = -87.77467
+anchor_right = 0.57600003
+anchor_bottom = 1.0
+offset_right = -704.693
+offset_bottom = -283.3619
 scale = Vector2(2.5754116, 1.7771045)
 item_count = 1
 item_0/text = "wouwou"
