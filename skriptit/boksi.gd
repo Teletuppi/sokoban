@@ -47,7 +47,7 @@ func tippuuu(Area):
 func _process(_delta):
 	for Area in Areat:
 		if Area == null:
-			break
+			continue
 		var areacollision = Area.get_child(0)
 
 		#print("öh ", "positionit: ", Area.position, areacollision.position, " globaalit: ", to_global(), to_local(Area.position), to_global(areacollision), to_local(areacollision))
