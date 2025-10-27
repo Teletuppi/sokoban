@@ -29,6 +29,8 @@ func _process(float) -> void:
 	if Input.is_action_just_pressed("esci"):
 		avaa_sulje_pause("res://scenes/pause_menu.tscn")
 	
+		
+	
 
 func avaa_sulje_pause(path: String):
 	var UI: Resource = load(path)

@@ -38,3 +38,7 @@ func _process(_delta: float) -> void:
 		$Sprite2D.texture = AlaSprite
 	elif direction.y < 0:
 		$Sprite2D.texture = YlaSprite	
+	if Input.is_action_pressed("hitaus"):
+		speed = 30
+	else:
+		speed = 200
