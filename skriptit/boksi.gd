@@ -6,7 +6,6 @@ var taikanumero = 0.5905303955
 var hengityshuone = 1.1
 @onready var tasojohtaja = $/root/TasoJohtaja
 @onready var Tilemapsi: TileMapLayer = get_node("/root/TasoJohtaja/leveli").get_child(0).get_node("TileMapLayer")
-
 var Areat = []
 @onready var collisionbox = $CollisionShape2D
 signal reiässä

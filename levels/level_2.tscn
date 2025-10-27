@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=4 uid="uid://h8v2qqsabery"]
 
-[ext_resource type="PackedScene" uid="uid://c87qi4l76ip6g" path="res://scenes/boksi.tscn" id="1_v5uil"]
+[ext_resource type="PackedScene" uid="uid://c87qi4l76ip6g" path="res://scenes/boksi_punainen.tscn" id="1_v5uil"]
 [ext_resource type="Texture2D" uid="uid://so5pcoq1biko" path="res://kenney_sokoban-pack/Tilesheet/sokoban_tilesheet.png" id="2_5722l"]
 [ext_resource type="Script" uid="uid://b3fex8j1r4vnh" path="res://skriptit/tilemappi.gd" id="3_ilhis"]
 [ext_resource type="PackedScene" uid="uid://dchub31y4txis" path="res://scenes/pelaaja.tscn" id="4_ep78u"]
