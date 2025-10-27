@@ -40,7 +40,18 @@ func tippuuu(Area):
 	reiässä.emit(position, atlascoords)
 	queue_free()
 	Area.queue_free()
-	Tilemapsi.set_cell(Tilemapsi.local_to_map(Area.position), 0, Vector2i(6, 4))
+	if name == "boksi_ruskea":
+		Tilemapsi.set_cell(Tilemapsi.local_to_map(Area.position), 0, Vector2i(6, 4))
+	if name == "boksi_punainen":
+		Tilemapsi.set_cell(Tilemapsi.local_to_map(Area.position), 0, Vector2i(7, 4))
+	if name == "boksi_sininen":
+		Tilemapsi.set_cell(Tilemapsi.local_to_map(Area.position), 0, Vector2i(8, 4))
+	if name == "boksi_luiginvihreä":
+		Tilemapsi.set_cell(Tilemapsi.local_to_map(Area.position), 0, Vector2i(9, 4))
+	if name == "boksi_harmaa":
+		Tilemapsi.set_cell(Tilemapsi.local_to_map(Area.position), 0, Vector2i(10, 4))
+		
+	
 	pass
 
 func _process(_delta):
