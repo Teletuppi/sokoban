@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmqcfa6wcea24"]
+
+[ext_resource type="Script" uid="uid://cl14u7r6ff87u" path="res://skriptit/boksi.gd" id="1_548jw"]
+[ext_resource type="Texture2D" uid="uid://dyc46j84pn70c" path="res://kenney_sokoban-pack/PNG/Default size/Crates/crate_45.png" id="2_548jw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h5ssj"]
+size = Vector2(21.333334, 21.333334)
+
+[node name="boksi_luiginvihreä" type="RigidBody2D"]
+gravity_scale = 0.0
+script = ExtResource("1_548jw")
+friction = 0.85
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.78925204, 0.78925204)
+texture = ExtResource("2_548jw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.4305115e-06, -1.4305115e-06)
+scale = Vector2(2.335515, 2.335515)
+shape = SubResource("RectangleShape2D_h5ssj")
