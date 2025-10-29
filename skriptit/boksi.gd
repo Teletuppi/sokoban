@@ -36,7 +36,7 @@ func kitkah() -> void:
 	linear_velocity *= friction
 	angular_velocity *= friction
 
-func tippuuu(Area):
+func tippuuu(Area: Area2D):
 	print(Area)
 	var atlascoords = Vector2(1, 0)
 	reiässä.emit(position, atlascoords)
@@ -46,7 +46,9 @@ func tippuuu(Area):
 	while boksinimi[boksinimi.length()-1].is_valid_int():
 		boksinimi = boksinimi.replace(str(boksinimi[boksinimi.length()-1]), "")
 	
-		
+	# tällä sitten scorea joku päivä ELÄ TUHOA !!!!!!
+	# print(Area.get_meta("kohta"))	
+	
 	#hah
 	if boksinimi == "boksi_ruskea":
 		Tilemapsi.set_cell(Tilemapsi.local_to_map(Area.position), 0, Vector2i(6, 4))
