@@ -18,6 +18,7 @@ func _ready():
 	#print(matching_positions)
 	for cell in matching_positions:
 		var area = Area2D.new()
+		area.set_meta("väri", 1)
 		
 		area.position = map_to_local(cell)
 		area.add_to_group("Kolot")

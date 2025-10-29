@@ -24,6 +24,7 @@ func _reiitetään() -> void:
 	for node in get_tree().get_nodes_in_group("Kolot"):
 		#print(node)
 		#print(get_node("/root/TasoJohtaja").get_child(0))
+		print(" META DATA ", node.get_meta("väri"))
 		Areat.append(node)
 	
 	
@@ -40,6 +41,7 @@ func tippuuu(Area):
 	reiässä.emit(position, atlascoords)
 	queue_free()
 	Area.queue_free()
+	#hah
 	if name == "boksi_ruskea":
 		Tilemapsi.set_cell(Tilemapsi.local_to_map(Area.position), 0, Vector2i(6, 4))
 	if name == "boksi_punainen":
