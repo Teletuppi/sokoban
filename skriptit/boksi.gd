@@ -42,16 +42,21 @@ func tippuuu(Area):
 	reiässä.emit(position, atlascoords)
 	queue_free()
 	Area.queue_free()
+	var boksinimi: String = name
+	while boksinimi[boksinimi.length()-1].is_valid_int():
+		boksinimi = boksinimi.replace(str(boksinimi[boksinimi.length()-1]), "")
+	
+		
 	#hah
-	if name == "boksi_ruskea":
+	if boksinimi == "boksi_ruskea":
 		Tilemapsi.set_cell(Tilemapsi.local_to_map(Area.position), 0, Vector2i(6, 4))
-	if name == "boksi_punainen":
+	if boksinimi == "boksi_punainen":
 		Tilemapsi.set_cell(Tilemapsi.local_to_map(Area.position), 0, Vector2i(7, 4))
-	if name == "boksi_sininen":
+	if boksinimi == "boksi_sininen":
 		Tilemapsi.set_cell(Tilemapsi.local_to_map(Area.position), 0, Vector2i(8, 4))
-	if name == "boksi_luiginvihreä":
+	if boksinimi == "boksi_luiginvihreä":
 		Tilemapsi.set_cell(Tilemapsi.local_to_map(Area.position), 0, Vector2i(9, 4))
-	if name == "boksi_harmaa":
+	if boksinimi == "boksi_harmaa":
 		Tilemapsi.set_cell(Tilemapsi.local_to_map(Area.position), 0, Vector2i(10, 4))
 		
 	
