@@ -1,19 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://u41sou1oeimq"]
+[gd_scene load_steps=4 format=3 uid="uid://c7jiulmlqugen"]
 
-[ext_resource type="Script" uid="uid://cl14u7r6ff87u" path="res://skriptit/boksi.gd" id="1_3c5a8"]
-[ext_resource type="Texture2D" uid="uid://dbsgiex06gds" path="res://kenney_sokoban-pack/PNG/Default size/Crates/crate_44.png" id="2_3c5a8"]
+[ext_resource type="Script" uid="uid://cl14u7r6ff87u" path="res://skriptit/boksi.gd" id="1_54efq"]
+[ext_resource type="Texture2D" uid="uid://dpd58gp0orl81" path="res://kenney_sokoban-pack/PNG/Default size/Crates/crate_01.png" id="2_54efq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h5ssj"]
 size = Vector2(21.333334, 21.333334)
 
-[node name="boksi_sininen" type="RigidBody2D"]
+[node name="boksi_harmaa" type="RigidBody2D"]
 gravity_scale = 0.0
-script = ExtResource("1_3c5a8")
+script = ExtResource("1_54efq")
 friction = 0.85
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.78925204, 0.78925204)
-texture = ExtResource("2_3c5a8")
+texture = ExtResource("2_54efq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1.4305115e-06, -1.4305115e-06)
