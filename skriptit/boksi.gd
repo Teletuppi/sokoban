@@ -24,7 +24,7 @@ func _reiitetään() -> void:
 	for node in get_tree().get_nodes_in_group("Kolot"):
 		#print(node)
 		#print(get_node("/root/TasoJohtaja").get_child(0))
-		print(" META DATA ", node.get_meta("väri"))
+		#print(" META DATA ", node.get_meta("väri"))
 		Areat.append(node)
 	
 	
@@ -37,6 +37,7 @@ func kitkah() -> void:
 	angular_velocity *= friction
 
 func tippuuu(Area):
+	print(Area)
 	var atlascoords = Vector2(1, 0)
 	reiässä.emit(position, atlascoords)
 	queue_free()
