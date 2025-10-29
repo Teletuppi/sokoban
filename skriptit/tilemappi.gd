@@ -13,12 +13,10 @@ func _ready():
 			if source_id == 0 and atlas_coords == Vector2i(11, i):
 				matching_positions.append(cell)
 		
-	#print("TÄMÄONTÄRKEÄÄÄ!!", matching_positions)
 
-	#print("Found ", matching_positions.size(), " matching tiles: ", matching_positions)
-	#print(matching_positions)
 	for cell in matching_positions:
 		var area = Area2D.new()
+		#SCOREA JOKU PÄIVÄ JIPPII
 		area.set_meta("kohta", get_cell_atlas_coords(cell))
 		print(get_cell_atlas_coords(cell))
 		
