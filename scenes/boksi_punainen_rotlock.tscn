@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://cfg18ik4uunvj"]
+
+[ext_resource type="Script" uid="uid://cl14u7r6ff87u" path="res://skriptit/boksi.gd" id="1_ptqvp"]
+[ext_resource type="Texture2D" uid="uid://btvmmaj8dfycb" path="res://kenney_sokoban-pack/PNG/Default size/Crates/crate_43.png" id="2_f8jco"]
+[ext_resource type="Texture2D" uid="uid://cwcbeh8jt7i1d" path="res://kenney_sokoban-pack/PNG/Default size/Crates/crate_28.png" id="3_f8jco"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h5ssj"]
+size = Vector2(21.333334, 21.333334)
+
+[node name="boksi_punainen" type="RigidBody2D"]
+gravity_scale = 0.0
+script = ExtResource("1_ptqvp")
+friction = 0.85
+rotlock = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.78925204, 0.78925204)
+texture = ExtResource("2_f8jco")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
+texture = ExtResource("3_f8jco")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.4305115e-06, -1.4305115e-06)
+scale = Vector2(2.335515, 2.335515)
+shape = SubResource("RectangleShape2D_h5ssj")
