@@ -24,6 +24,7 @@ func _reiitetään() -> void:
 	for node in get_tree().get_nodes_in_group("Kolot"):
 		#print(node)
 		#print(get_node("/root/TasoJohtaja").get_child(0))
+		#print(" META DATA ", node.get_meta("väri"))
 		Areat.append(node)
 	
 	
@@ -35,20 +36,29 @@ func kitkah() -> void:
 	linear_velocity *= friction
 	angular_velocity *= friction
 
-func tippuuu(Area):
+func tippuuu(Area: Area2D):
+	print(Area)
 	var atlascoords = Vector2(1, 0)
 	reiässä.emit(position, atlascoords)
 	queue_free()
 	Area.queue_free()
-	if name == "boksi_ruskea":
+	var boksinimi: String = name
+	while boksinimi[boksinimi.length()-1].is_valid_int():
+		boksinimi = boksinimi.replace(str(boksinimi[boksinimi.length()-1]), "")
+	
+	# tällä sitten scorea joku päivä ELÄ TUHOA !!!!!!
+	# print(Area.get_meta("kohta"))	
+	
+	#hah
+	if boksinimi == "boksi_ruskea":
 		Tilemapsi.set_cell(Tilemapsi.local_to_map(Area.position), 0, Vector2i(6, 4))
-	if name == "boksi_punainen":
+	if boksinimi == "boksi_punainen":
 		Tilemapsi.set_cell(Tilemapsi.local_to_map(Area.position), 0, Vector2i(7, 4))
-	if name == "boksi_sininen":
+	if boksinimi == "boksi_sininen":
 		Tilemapsi.set_cell(Tilemapsi.local_to_map(Area.position), 0, Vector2i(8, 4))
-	if name == "boksi_luiginvihreä":
+	if boksinimi == "boksi_luiginvihreä":
 		Tilemapsi.set_cell(Tilemapsi.local_to_map(Area.position), 0, Vector2i(9, 4))
-	if name == "boksi_harmaa":
+	if boksinimi == "boksi_harmaa":
 		Tilemapsi.set_cell(Tilemapsi.local_to_map(Area.position), 0, Vector2i(10, 4))
 		
 	
