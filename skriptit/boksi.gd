@@ -1,5 +1,6 @@
 extends RigidBody2D
 @export var friction := 0.9
+@export var rotlock: bool
 var lähellä = false
 var lähikolot := []
 var taikanumero = 0.5905303955
@@ -12,6 +13,7 @@ signal reiässä
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	lock_rotation = rotlock
 	print("skene puu: ")
 	tasojohtaja.print_tree()
 	#print(Tilemapsi.reiätvalmiit)
