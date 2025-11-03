@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://so5pcoq1biko" path="res://kenney_sokoban-pack/Tilesheet/sokoban_tilesheet.png" id="1_s4mq8"]
 [ext_resource type="Script" uid="uid://b3fex8j1r4vnh" path="res://skriptit/tilemappi.gd" id="2_t0qhu"]
 [ext_resource type="PackedScene" uid="uid://dchub31y4txis" path="res://scenes/pelaaja.tscn" id="3_t6q73"]
-[ext_resource type="PackedScene" uid="uid://cmqcfa6wcea24" path="res://scenes/boksi_luiginvihreä.tscn" id="4_t0qhu"]
-[ext_resource type="PackedScene" uid="uid://c87qi4l76ip6g" path="res://scenes/boksi_punainen.tscn" id="5_t6q73"]
+[ext_resource type="PackedScene" uid="uid://cmqcfa6wcea24" path="res://boksi_luiginvihreä.tscn" id="4_t0qhu"]
+[ext_resource type="PackedScene" uid="uid://c87qi4l76ip6g" path="res://boksi_punainen.tscn" id="5_t6q73"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oglyl"]
 texture = ExtResource("1_s4mq8")

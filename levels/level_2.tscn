@@ -1,13 +1,13 @@
 [gd_scene load_steps=11 format=4 uid="uid://h8v2qqsabery"]
 
-[ext_resource type="PackedScene" uid="uid://c7jiulmlqugen" path="res://scenes/boksi_harmaa.tscn" id="1_dfjjl"]
+[ext_resource type="PackedScene" uid="uid://c7jiulmlqugen" path="res://boksi_harmaa.tscn" id="1_dfjjl"]
 [ext_resource type="Texture2D" uid="uid://so5pcoq1biko" path="res://kenney_sokoban-pack/Tilesheet/sokoban_tilesheet.png" id="2_5722l"]
-[ext_resource type="PackedScene" uid="uid://cmqcfa6wcea24" path="res://scenes/boksi_luiginvihreä.tscn" id="2_at1ld"]
+[ext_resource type="PackedScene" uid="uid://cmqcfa6wcea24" path="res://boksi_luiginvihreä.tscn" id="2_at1ld"]
 [ext_resource type="Script" uid="uid://b3fex8j1r4vnh" path="res://skriptit/tilemappi.gd" id="3_ilhis"]
-[ext_resource type="PackedScene" uid="uid://c87qi4l76ip6g" path="res://scenes/boksi_punainen.tscn" id="3_sd18g"]
+[ext_resource type="PackedScene" uid="uid://c87qi4l76ip6g" path="res://boksi_punainen.tscn" id="3_sd18g"]
 [ext_resource type="PackedScene" uid="uid://dchub31y4txis" path="res://scenes/pelaaja.tscn" id="4_ep78u"]
 [ext_resource type="PackedScene" uid="uid://hiog4f0hosak" path="res://boksi_ruskea.tscn" id="4_vm7no"]
-[ext_resource type="PackedScene" uid="uid://u41sou1oeimq" path="res://scenes/boksi_sininen.tscn" id="5_hbb88"]
+[ext_resource type="PackedScene" uid="uid://u41sou1oeimq" path="res://boksi_sininen.tscn" id="5_hbb88"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oglyl"]
 texture = ExtResource("2_5722l")
