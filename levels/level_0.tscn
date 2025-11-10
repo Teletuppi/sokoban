@@ -1,11 +1,13 @@
-[gd_scene load_steps=9 format=4 uid="uid://dcgtch2cy08wl"]
+[gd_scene load_steps=11 format=4 uid="uid://dcgtch2cy08wl"]
 
-[ext_resource type="PackedScene" uid="uid://c87qi4l76ip6g" path="res://boksi_punainen.tscn" id="1_yi3jx"]
+[ext_resource type="PackedScene" uid="uid://c87qi4l76ip6g" path="res://boksit/boksi_punainen.tscn" id="1_yi3jx"]
 [ext_resource type="Texture2D" uid="uid://so5pcoq1biko" path="res://kenney_sokoban-pack/Tilesheet/sokoban_tilesheet.png" id="2_foxie"]
 [ext_resource type="Script" uid="uid://b3fex8j1r4vnh" path="res://skriptit/tilemappi.gd" id="3_7d3si"]
 [ext_resource type="PackedScene" uid="uid://dchub31y4txis" path="res://scenes/pelaaja.tscn" id="4_jum3j"]
-[ext_resource type="PackedScene" uid="uid://u41sou1oeimq" path="res://boksi_sininen.tscn" id="5_foxie"]
-[ext_resource type="PackedScene" uid="uid://cnxbn6dth72ji" path="res://boksi_ruskea_rotlock.tscn" id="6_7d3si"]
+[ext_resource type="PackedScene" uid="uid://u41sou1oeimq" path="res://boksit/boksi_sininen.tscn" id="5_foxie"]
+[ext_resource type="PackedScene" uid="uid://cnxbn6dth72ji" path="res://boksit/boksi_ruskea_rotlock.tscn" id="6_7d3si"]
+[ext_resource type="PackedScene" uid="uid://cnrdrfcbqtgyr" path="res://boksit/boksi_sininen_rotlock.tscn" id="7_c4pne"]
+[ext_resource type="PackedScene" uid="uid://bdjaqyajb8sjj" path="res://boksit/boksi_harmaa_rotlock.tscn" id="8_tfamw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c4pne"]
 texture = ExtResource("2_foxie")
@@ -148,3 +150,9 @@ script = ExtResource("3_7d3si")
 
 [node name="Pelaaja" parent="." instance=ExtResource("4_jum3j")]
 position = Vector2(-340, -54)
+
+[node name="boksi_sininen" parent="." instance=ExtResource("7_c4pne")]
+position = Vector2(-103, -111)
+
+[node name="boksi_harmaa" parent="." instance=ExtResource("8_tfamw")]
+position = Vector2(-73, -40)
