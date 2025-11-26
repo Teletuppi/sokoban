@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=4 uid="uid://bgw6nsxx2yvcp"]
 
-[ext_resource type="PackedScene" uid="uid://cmqcfa6wcea24" path="res://scenes/boksi_luiginvihreä.tscn" id="1_26h77"]
-[ext_resource type="PackedScene" uid="uid://c87qi4l76ip6g" path="res://scenes/boksi_punainen.tscn" id="2_1y5xd"]
-[ext_resource type="PackedScene" uid="uid://u41sou1oeimq" path="res://scenes/boksi_sininen.tscn" id="3_1y5xd"]
+[ext_resource type="PackedScene" uid="uid://cmqcfa6wcea24" path="res://boksit/boksi_luiginvihreä.tscn" id="1_26h77"]
+[ext_resource type="PackedScene" uid="uid://c87qi4l76ip6g" path="res://boksit/boksi_punainen.tscn" id="2_1y5xd"]
+[ext_resource type="PackedScene" uid="uid://u41sou1oeimq" path="res://boksit/boksi_sininen.tscn" id="3_1y5xd"]
 [ext_resource type="Texture2D" uid="uid://so5pcoq1biko" path="res://kenney_sokoban-pack/Tilesheet/sokoban_tilesheet.png" id="3_g5mgy"]
 [ext_resource type="Script" uid="uid://b3fex8j1r4vnh" path="res://skriptit/tilemappi.gd" id="4_v5ho1"]
 [ext_resource type="PackedScene" uid="uid://dchub31y4txis" path="res://scenes/pelaaja.tscn" id="5_ldpug"]
