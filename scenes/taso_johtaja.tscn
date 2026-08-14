@@ -1,15 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://lc1x1od8aqof"]
+[gd_scene format=3 uid="uid://lc1x1od8aqof"]
 
 [ext_resource type="Script" uid="uid://coikhvin7u5mk" path="res://skriptit/taso_johtaja.gd" id="1_n8d8o"]
 
-[node name="TasoJohtaja" type="Node"]
+[node name="TasoJohtaja" type="Node" unique_id=1943776593]
 script = ExtResource("1_n8d8o")
 
-[node name="leveli" type="Node" parent="."]
+[node name="leveli" type="Node" parent="." unique_id=1176137477]
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=251527947]
 
-[node name="UI" type="Control" parent="."]
+[node name="UI" type="Control" parent="." unique_id=862944769]
 layout_mode = 3
 anchor_left = -0.5
 anchor_top = -0.5
