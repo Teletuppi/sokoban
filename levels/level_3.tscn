@@ -1,12 +1,12 @@
-[gd_scene format=4 uid="uid://licdl3lcm8lb"]
+[gd_scene format=4 uid="uid://c4jea0n6t0vc4"]
 
-[ext_resource type="Texture2D" uid="uid://so5pcoq1biko" path="res://kenney_sokoban-pack/Tilesheet/sokoban_tilesheet.png" id="2_rka8t"]
-[ext_resource type="Script" uid="uid://b3fex8j1r4vnh" path="res://skriptit/tilemappi.gd" id="3_5hph3"]
-[ext_resource type="PackedScene" uid="uid://cnxbn6dth72ji" path="res://boksit/boksi_ruskea_rotlock.tscn" id="4_bmgug"]
-[ext_resource type="PackedScene" uid="uid://dchub31y4txis" path="res://scenes/pelaaja.tscn" id="4_j7kpp"]
+[ext_resource type="PackedScene" uid="uid://cnxbn6dth72ji" path="res://boksit/boksi_ruskea_rotlock.tscn" id="1_t0qhu"]
+[ext_resource type="Texture2D" uid="uid://so5pcoq1biko" path="res://kenney_sokoban-pack/Tilesheet/sokoban_tilesheet.png" id="2_t6q73"]
+[ext_resource type="Script" uid="uid://b3fex8j1r4vnh" path="res://skriptit/tilemappi.gd" id="3_hokjj"]
+[ext_resource type="PackedScene" uid="uid://dchub31y4txis" path="res://scenes/pelaaja.tscn" id="4_0fd8o"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oglyl"]
-texture = ExtResource("2_rka8t")
+texture = ExtResource("2_t6q73")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 0:1/0 = 0
@@ -126,13 +126,13 @@ sources/0 = SubResource("TileSetAtlasSource_oglyl")
 
 [node name="Boksit" type="Node" parent="." unique_id=241947998]
 
-[node name="boksi_ruskea" parent="Boksit" unique_id=421936428 instance=ExtResource("4_bmgug")]
+[node name="boksi_ruskea" parent="Boksit" unique_id=421936428 instance=ExtResource("1_t0qhu")]
 position = Vector2(-96, -26)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1561232823]
 tile_map_data = PackedByteArray("AAAIAP7/AAAAAAAAAAAIAP//AAAAAAAAAAAIAAAAAAAAAAAAAAD3/wAAAAAAAAAAAAD3////AAAAAAAAAAD3//7/AAAAAAAAAAD4/wAAAAAAAAAAAAD6/wAAAAAAAAAAAAD7//7/AAAAAAAAAAD7/wAAAAAAAAAAAAABAAAAAAAJAAcAAAACAP//AAAJAAcAAAADAP//AAAAAAAAAAADAP7/AAAAAAAAAAAEAP7/AAAAAAAAAAD+//7/AAAJAAYAAAD///7/AAAJAAcAAAD+/wAAAAAJAAYAAAACAAAAAAAJAAcAAAD5/wAAAAAAAAAAAAD5//7/AAAAAAAAAAD4//7/AAAAAAAAAAD6//7/AAAAAAAAAAD9/wAAAAAJAAYAAAD9//7/AAAJAAcAAAD8//7/AAAJAAcAAAABAP7/AAAJAAcAAAAAAP7/AAAJAAYAAAAAAP//AAAJAAYAAAD/////AAAJAAYAAAD//wAAAAAJAAcAAAAAAAAAAAALAAAAAAABAP//AAAJAAYAAAACAP7/AAAJAAcAAAAFAP7/AAAAAAAAAAAFAP//AAAAAAAAAAAEAP//AAAAAAAAAAAEAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAGAP//AAAAAAAAAAAGAP7/AAAAAAAAAAAHAP7/AAAAAAAAAAAHAP//AAAAAAAAAAAHAAAAAAAAAAAAAAD8/wAAAAAJAAcAAAD+////AAAJAAYAAAD9////AAAJAAYAAAD8////AAAJAAcAAAD7////AAAAAAAAAAD6////AAAAAAAAAAD5////AAAAAAAAAAD4////AAAAAAAAAAD+//3/AAAJAAYAAAD9//3/AAAJAAcAAAD///3/AAAJAAYAAAD///z/AAAJAAcAAAD9//z/AAAJAAcAAAD9//v/AAAAAAAAAAAAAP3/AAAJAAYAAAAAAPv/AAAAAAAAAAABAPz/AAAJAAcAAAAAAPz/AAAJAAcAAAABAPv/AAAAAAAAAAABAP3/AAAJAAcAAAADAPr/AAAAAAAAAAACAPr/AAAAAAAAAAABAPr/AAAAAAAAAAD///v/AAAAAAAAAAD+//v/AAAAAAAAAAD8//z/AAAAAAAAAAD7//z/AAAAAAAAAAD6//3/AAAAAAAAAAD5//3/AAAAAAAAAAD4//3/AAAAAAAAAAD2//7/AAAAAAAAAAD1////AAAAAAAAAAD0////AAAAAAAAAADz/wAAAAAAAAAAAADy/wAAAAAAAAAAAAD0/wAAAAAAAAAAAAD2////AAAAAAAAAAD6//z/AAAAAAAAAAD8//v/AAAAAAAAAAD+//r/AAAAAAAAAAD///r/AAAAAAAAAAAAAPn/AAAAAAAAAAD///n/AAAAAAAAAAD9//r/AAAAAAAAAAD7//v/AAAAAAAAAAD5//z/AAAAAAAAAAD3//3/AAAAAAAAAAAAAPr/AAAAAAAAAAABAPn/AAAAAAAAAAD+//z/AAAJAAcAAAD8//3/AAAAAAAAAAD7//3/AAAAAAAAAAD2/wEAAAAAAAAAAAD2/wAAAAAAAAAAAAD3/wEAAAAAAAAAAAACAPv/AAAAAAAAAAACAP3/AAAAAAAAAAADAPz/AAAAAAAAAAAEAPz/AAAAAAAAAAAFAPv/AAAAAAAAAAACAPz/AAAAAAAAAAAEAP3/AAAAAAAAAAAFAP3/AAAAAAAAAAAGAPz/AAAAAAAAAAAHAPz/AAAAAAAAAAAIAPz/AAAAAAAAAAAGAP3/AAAAAAAAAAADAP3/AAAAAAAAAAD6/wEAAAAAAAAAAAD5/wEAAAAAAAAAAAD7/wEAAAAAAAAAAAAFAPz/AAAAAAAAAAD4/wEAAAAAAAAAAAD3/wIAAAAAAAAAAAD2/wIAAAAAAAAAAAD2/wMAAAAAAAAAAAD4/wIAAAAAAAAAAAAGAPv/AAAAAAAAAAAHAPr/AAAAAAAAAAAIAPr/AAAAAAAAAAAJAPn/AAAAAAAAAAAKAPn/AAAAAAAAAAALAPj/AAAAAAAAAAALAPn/AAAAAAAAAAAEAPv/AAAAAAAAAAAJAPr/AAAAAAAAAAAHAPv/AAAAAAAAAAAHAP3/AAAAAAAAAAAIAP3/AAAAAAAAAAAJAP7/AAAAAAAAAAABAAEAAAAJAAcAAAAAAAEAAAAJAAcAAAD//wEAAAAJAAcAAAD+/wEAAAAJAAcAAAD9/wEAAAAJAAcAAAD8/wEAAAAJAAcAAAA=")
 tile_set = SubResource("TileSet_h0b6q")
-script = ExtResource("3_5hph3")
+script = ExtResource("3_hokjj")
 
-[node name="Pelaaja" parent="." unique_id=1262682169 instance=ExtResource("4_j7kpp")]
+[node name="Pelaaja" parent="." unique_id=1262682169 instance=ExtResource("4_0fd8o")]
 position = Vector2(-96, 30)
