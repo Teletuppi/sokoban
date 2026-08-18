@@ -14,8 +14,8 @@ signal reiässä
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	lock_rotation = rotlock
-	print("skene puu: ")
-	tasojohtaja.print_tree()
+	#print("skene puu: ")
+	#tasojohtaja.print_tree()
 	#print(Tilemapsi.reiätvalmiit)
 	Tilemapsi.reiätvalmiit.connect(_reiitetään)
 	#print(get_node("/root/TasoJohtaja").get_child(1), "  tää on readyssä ")

@@ -20,11 +20,11 @@ func load_signal_level(idx, _position, _mousebuttonn):
 
 
 func load_level(path: String):
-	print("ladattiin leveilili! CURRENT LEVEL ON: " + str(current_level))
+	#print("ladattiin leveilili! CURRENT LEVEL ON: " + str(current_level))
 	current_level.queue_free()
 	while is_instance_valid(current_level):
 		await get_tree().process_frame
-		print("GAGAGAGA")
+		#print("GAGAGAGA")
 	var new_level = load(path)
 	if new_level == null:
 		print("ERROR: Level resource not found at " + path)

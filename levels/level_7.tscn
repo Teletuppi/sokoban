@@ -1,13 +1,13 @@
-[gd_scene load_steps=8 format=4 uid="uid://bmkere4ogd7fx"]
+[gd_scene format=4 uid="uid://bmkere4ogd7fx"]
 
-[ext_resource type="PackedScene" uid="uid://hiog4f0hosak" path="res://boksit/boksi_ruskea.tscn" id="1_vkyvx"]
-[ext_resource type="PackedScene" uid="uid://u41sou1oeimq" path="res://boksit/boksi_sininen.tscn" id="2_3daal"]
-[ext_resource type="Texture2D" uid="uid://so5pcoq1biko" path="res://kenney_sokoban-pack/Tilesheet/sokoban_tilesheet.png" id="3_dovu5"]
-[ext_resource type="Script" uid="uid://b3fex8j1r4vnh" path="res://skriptit/tilemappi.gd" id="4_4gpm2"]
-[ext_resource type="PackedScene" uid="uid://dchub31y4txis" path="res://scenes/pelaaja.tscn" id="5_p20vj"]
+[ext_resource type="PackedScene" uid="uid://hiog4f0hosak" path="res://boksit/boksi_ruskea.tscn" id="1_jgr6b"]
+[ext_resource type="PackedScene" uid="uid://u41sou1oeimq" path="res://boksit/boksi_sininen.tscn" id="2_vendn"]
+[ext_resource type="Texture2D" uid="uid://so5pcoq1biko" path="res://kenney_sokoban-pack/Tilesheet/sokoban_tilesheet.png" id="3_urq6f"]
+[ext_resource type="Script" uid="uid://b3fex8j1r4vnh" path="res://skriptit/tilemappi.gd" id="4_nyknj"]
+[ext_resource type="PackedScene" uid="uid://dchub31y4txis" path="res://scenes/pelaaja.tscn" id="5_q3845"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oglyl"]
-texture = ExtResource("3_dovu5")
+texture = ExtResource("3_urq6f")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 0:1/0 = 0
@@ -123,20 +123,20 @@ tile_size = Vector2i(64, 64)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_oglyl")
 
-[node name="level_20" type="Node2D"]
+[node name="level_20" type="Node2D" unique_id=2020012203]
 
-[node name="Boksit" type="Node" parent="."]
+[node name="Boksit" type="Node" parent="." unique_id=2260696]
 
-[node name="boksi_ruskea" parent="Boksit" instance=ExtResource("1_vkyvx")]
+[node name="boksi_ruskea" parent="Boksit" unique_id=519327748 instance=ExtResource("1_jgr6b")]
 position = Vector2(416, -225)
 
-[node name="boksi_sininen" parent="Boksit" instance=ExtResource("2_3daal")]
+[node name="boksi_sininen" parent="Boksit" unique_id=589294250 instance=ExtResource("2_vendn")]
 position = Vector2(-468, 176)
 
-[node name="TileMapLayer" type="TileMapLayer" parent="."]
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=322471977]
 tile_map_data = PackedByteArray("AAD3//v/AAAJAAcAAAD3//z/AAAJAAcAAAD3//3/AAAJAAcAAAD4//v/AAAJAAcAAAD5//v/AAAJAAcAAAD6//v/AAAJAAcAAAD7//v/AAAJAAcAAAD8//v/AAAJAAcAAAD9//v/AAAJAAcAAAD+//v/AAAJAAcAAAD///v/AAAJAAcAAAAAAPv/AAAJAAcAAAABAPv/AAAJAAcAAAACAPv/AAAJAAcAAAADAPv/AAAJAAcAAAAEAPv/AAAJAAcAAAAFAPv/AAAJAAcAAAAGAPv/AAAJAAcAAAAHAPv/AAAJAAcAAAAIAPv/AAAJAAcAAAAIAPz/AAAJAAcAAAAIAP3/AAAJAAcAAAAIAP7/AAAJAAcAAAAIAP//AAAJAAcAAAAIAAAAAAAJAAcAAAAIAAEAAAAJAAcAAAAIAAIAAAAJAAcAAAAIAAMAAAAJAAcAAAAIAAQAAAAJAAcAAAAHAAQAAAAJAAcAAAAGAAQAAAAJAAcAAAAFAAQAAAAJAAcAAAAEAAQAAAAJAAcAAAADAAQAAAAJAAcAAAACAAQAAAAJAAcAAAABAAQAAAAJAAcAAAAAAAQAAAAJAAcAAAD//wQAAAAJAAcAAAD+/wQAAAAJAAcAAAD9/wQAAAAJAAcAAAD8/wQAAAAJAAcAAAD6/wQAAAAJAAcAAAD5/wQAAAAJAAcAAAD4/wQAAAAJAAcAAAD3/wQAAAAJAAcAAAD3/wMAAAAJAAcAAAD3/wIAAAAJAAcAAAD3/wEAAAAJAAcAAAD3/wAAAAAJAAcAAAD3////AAAJAAcAAAD3//7/AAAJAAcAAAD6/wEAAAAMAAYAAAD6/wAAAAAMAAYAAAD8/wMAAAAMAAYAAAD7/wEAAAAMAAYAAAD8/wEAAAAJAAcAAAD5//3/AAAJAAcAAAD5//z/AAAJAAcAAAD7//z/AAAJAAcAAAD7//3/AAAJAAcAAAD7//7/AAAJAAcAAAD7////AAAJAAcAAAD7/wAAAAAMAAYAAAD//wIAAAAJAAcAAAD//wEAAAAJAAcAAAAAAAEAAAAJAAcAAAABAAAAAAALAAAAAAACAP//AAALAAAAAAADAP//AAALAAAAAAADAP7/AAALAAAAAAAEAP7/AAALAAAAAAD9//3/AAAJAAcAAAD+//3/AAAJAAcAAAD+//7/AAAJAAcAAAD///7/AAAJAAcAAAABAAEAAAAMAAYAAAACAAAAAAALAAAAAAD+/wEAAAAJAAcAAAD5/wAAAAAJAAcAAAD5////AAAJAAcAAAD5//7/AAAJAAcAAAD4//7/AAAJAAcAAAD4//3/AAAJAAcAAAD4//z/AAAJAAcAAAD4////AAAJAAcAAAD6//7/AAAJAAcAAAD6//3/AAAJAAcAAAD6//z/AAAJAAcAAAD6////AAAJAAcAAAD7/wIAAAAMAAYAAAD8/wIAAAAMAAYAAAD9/wIAAAAJAAcAAAD9/wEAAAAJAAcAAAD9////AAAJAAcAAAD9//7/AAAJAAcAAAD8//7/AAAJAAcAAAD8//3/AAAJAAcAAAD8//z/AAAJAAcAAAD9//z/AAAJAAcAAAD+//z/AAAJAAcAAAD///z/AAAJAAcAAAD///3/AAAJAAcAAAAAAP3/AAAJAAcAAAAAAPz/AAAJAAcAAAABAPz/AAAJAAcAAAABAP3/AAAJAAcAAAABAP7/AAAJAAcAAAAAAP7/AAAJAAcAAAAAAP//AAAJAAcAAAD/////AAAJAAcAAAD+////AAAJAAcAAAD//wAAAAAJAAcAAAAAAAAAAAAJAAcAAAABAP//AAAJAAcAAAACAP7/AAAJAAcAAAACAP3/AAAJAAcAAAACAPz/AAAJAAcAAAADAPz/AAAJAAcAAAADAP3/AAAJAAcAAAAEAP3/AAAJAAcAAAAEAPz/AAAJAAcAAAAFAPz/AAAJAAcAAAAFAP3/AAALAAAAAAAFAP7/AAALAAAAAAAFAP//AAALAAAAAAAEAP//AAALAAAAAAAEAAAAAAALAAAAAAADAAAAAAALAAAAAAADAAEAAAAJAAcAAAACAAEAAAALAAAAAAACAAIAAAAMAAYAAAABAAIAAAAMAAYAAAAAAAIAAAAJAAcAAAAAAAMAAAAMAAYAAAD//wMAAAAMAAYAAAD+/wMAAAAMAAYAAAD+/wIAAAAJAAcAAAD9/wMAAAAMAAYAAAABAAMAAAAMAAYAAAACAAMAAAAMAAYAAAADAAMAAAAMAAYAAAADAAIAAAAJAAcAAAAEAAIAAAAJAAcAAAAEAAEAAAAJAAcAAAAFAAEAAAAJAAcAAAAFAAAAAAAJAAcAAAAGAAAAAAAJAAcAAAAGAP//AAALAAAAAAAGAP7/AAAMAAYAAAAGAP3/AAAMAAYAAAAGAPz/AAAMAAYAAAAHAPz/AAAMAAYAAAAHAP3/AAAMAAYAAAAHAP7/AAAMAAYAAAAHAP//AAAJAAcAAAAHAAAAAAAJAAcAAAAHAAEAAAAJAAcAAAAGAAEAAAAJAAcAAAAGAAIAAAAJAAcAAAAFAAIAAAAJAAcAAAAFAAMAAAAMAAYAAAAEAAMAAAABAAAAAAAGAAMAAAALAAEAAAAHAAMAAAALAAMAAAAHAAIAAAAJAAcAAAD8////AAAJAAcAAAD8/wAAAAAJAAcAAAD7/wQAAAAJAAcAAAD7/wMAAAAMAAYAAAD6/wIAAAAJAAcAAAD5/wIAAAAMAAYAAAD4/wEAAAAMAAYAAAD4/wAAAAAJAAcAAAD5/wEAAAAMAAYAAAD6/wMAAAAJAAcAAAD5/wMAAAAMAAYAAAD4/wMAAAAMAAYAAAD4/wIAAAAMAAYAAAD+/wAAAAAJAAcAAAD9/wAAAAAJAAcAAAA=")
 tile_set = SubResource("TileSet_h0b6q")
-script = ExtResource("4_4gpm2")
+script = ExtResource("4_nyknj")
 
-[node name="Pelaaja" parent="." instance=ExtResource("5_p20vj")]
+[node name="Pelaaja" parent="." unique_id=2037649443 instance=ExtResource("5_q3845")]
 position = Vector2(0, 215)

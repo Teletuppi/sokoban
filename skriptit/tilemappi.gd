@@ -18,7 +18,7 @@ func _ready():
 		var area = Area2D.new()
 		#SCOREA JOKU PÄIVÄ JIPPII
 		area.set_meta("kohta", get_cell_atlas_coords(cell))
-		print(get_cell_atlas_coords(cell))
+		#print(get_cell_atlas_coords(cell))
 		
 		area.position = map_to_local(cell)
 		area.add_to_group("Kolot")

@@ -2,7 +2,7 @@ extends ItemList
 
 func levelit_listaan() -> void:
 	var laskin = 0
-	var path = "res://levels/Level_" + str(laskin) + ".tscn"
+	var path = "res://levels/level_" + str(laskin) + ".tscn"
 	while ResourceLoader.exists(path):
 		var level = "level_" + str(laskin)
 		path = "res://levels/" + level + ".tscn"
