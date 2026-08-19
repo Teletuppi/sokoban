@@ -1,0 +1,175 @@
+[gd_scene format=4 uid="uid://cggrb3g8aryyy"]
+
+[ext_resource type="PackedScene" uid="uid://dted1v2u372b5" path="res://boksit/boksi_iso_ruskea_rotlock.tscn" id="3_761o0"]
+[ext_resource type="Texture2D" uid="uid://so5pcoq1biko" path="res://kenney_sokoban-pack/Tilesheet/sokoban_tilesheet.png" id="3_h6hrd"]
+[ext_resource type="PackedScene" uid="uid://duw34nbqffvyy" path="res://boksit/boksi_iso_harmaa_rotlock.tscn" id="4_no5ld"]
+[ext_resource type="Script" uid="uid://b3fex8j1r4vnh" path="res://skriptit/tilemappi.gd" id="4_tm2np"]
+[ext_resource type="PackedScene" uid="uid://dchub31y4txis" path="res://scenes/pelaaja.tscn" id="5_005au"]
+[ext_resource type="PackedScene" uid="uid://cfg18ik4uunvj" path="res://boksit/boksi_punainen_rotlock.tscn" id="5_f3s3n"]
+[ext_resource type="PackedScene" uid="uid://bdjaqyajb8sjj" path="res://boksit/boksi_harmaa_rotlock.tscn" id="6_h6hrd"]
+[ext_resource type="PackedScene" uid="uid://bsq44mh3f14xb" path="res://boksit/boksi_luiginvihreä_rotlock.tscn" id="6_lw361"]
+[ext_resource type="PackedScene" uid="uid://2cber82fpng0" path="res://boksit/boksi_seinä.tscn" id="6_wswef"]
+[ext_resource type="PackedScene" uid="uid://cnrdrfcbqtgyr" path="res://boksit/boksi_sininen_rotlock.tscn" id="7_vg8cp"]
+[ext_resource type="PackedScene" uid="uid://cnxbn6dth72ji" path="res://boksit/boksi_ruskea_rotlock.tscn" id="8_1rrcg"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oglyl"]
+texture = ExtResource("3_h6hrd")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+0:3/0 = 0
+0:4/0 = 0
+0:5/0 = 0
+0:6/0 = 0
+0:7/0 = 0
+1:0/0 = 0
+1:1/0 = 0
+1:2/0 = 0
+1:3/0 = 0
+1:4/0 = 0
+1:5/0 = 0
+1:6/0 = 0
+1:7/0 = 0
+2:0/0 = 0
+2:1/0 = 0
+2:2/0 = 0
+2:3/0 = 0
+2:4/0 = 0
+2:5/0 = 0
+2:6/0 = 0
+2:7/0 = 0
+3:0/0 = 0
+3:1/0 = 0
+3:2/0 = 0
+3:3/0 = 0
+3:4/0 = 0
+3:5/0 = 0
+3:6/0 = 0
+3:7/0 = 0
+4:0/0 = 0
+4:1/0 = 0
+4:2/0 = 0
+4:3/0 = 0
+4:4/0 = 0
+4:5/0 = 0
+4:6/0 = 0
+4:7/0 = 0
+5:0/0 = 0
+5:1/0 = 0
+5:2/0 = 0
+5:3/0 = 0
+5:4/0 = 0
+5:5/0 = 0
+5:6/0 = 0
+5:7/0 = 0
+6:0/0 = 0
+6:1/0 = 0
+6:2/0 = 0
+6:3/0 = 0
+6:4/0 = 0
+6:5/0 = 0
+6:6/0 = 0
+6:7/0 = 0
+6:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+7:0/0 = 0
+7:1/0 = 0
+7:2/0 = 0
+7:3/0 = 0
+7:4/0 = 0
+7:5/0 = 0
+7:6/0 = 0
+7:7/0 = 0
+7:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+8:0/0 = 0
+8:1/0 = 0
+8:2/0 = 0
+8:3/0 = 0
+8:4/0 = 0
+8:5/0 = 0
+8:6/0 = 0
+8:7/0 = 0
+8:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+9:0/0 = 0
+9:1/0 = 0
+9:2/0 = 0
+9:3/0 = 0
+9:4/0 = 0
+9:5/0 = 0
+9:6/0 = 0
+9:7/0 = 0
+9:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+10:0/0 = 0
+10:1/0 = 0
+10:2/0 = 0
+10:3/0 = 0
+10:4/0 = 0
+10:5/0 = 0
+10:6/0 = 0
+10:7/0 = 0
+11:0/0 = 0
+11:1/0 = 0
+11:2/0 = 0
+11:3/0 = 0
+11:4/0 = 0
+11:5/0 = 0
+11:6/0 = 0
+11:7/0 = 0
+12:0/0 = 0
+12:1/0 = 0
+12:2/0 = 0
+12:3/0 = 0
+12:4/0 = 0
+12:5/0 = 0
+12:6/0 = 0
+12:7/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_h0b6q"]
+tile_size = Vector2i(64, 64)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_oglyl")
+
+[node name="level_20" type="Node2D" unique_id=2020012203]
+
+[node name="Boksit" type="Node" parent="." unique_id=2260696]
+
+[node name="boksi_harmaa" parent="Boksit" unique_id=251876558 instance=ExtResource("6_wswef")]
+position = Vector2(96, -189)
+
+[node name="boksi_harmaa2" parent="Boksit" unique_id=7547228 instance=ExtResource("6_h6hrd")]
+position = Vector2(-97, 158)
+
+[node name="boksi_ruskea" parent="Boksit" unique_id=1699110756 instance=ExtResource("3_761o0")]
+position = Vector2(160, -162)
+
+[node name="boksi_harmaa3" parent="Boksit" unique_id=1556383464 instance=ExtResource("4_no5ld")]
+position = Vector2(33, -162)
+
+[node name="boksi_punainen" parent="Boksit" unique_id=702644390 instance=ExtResource("5_f3s3n")]
+position = Vector2(31, 160)
+
+[node name="boksi_luiginvihreä" parent="Boksit" unique_id=191727459 instance=ExtResource("6_lw361")]
+position = Vector2(351, -33)
+
+[node name="boksi_sininen" parent="Boksit" unique_id=202427029 instance=ExtResource("7_vg8cp")]
+position = Vector2(353, 95)
+
+[node name="boksi_ruskea2" parent="Boksit" unique_id=1751457992 instance=ExtResource("8_1rrcg")]
+position = Vector2(-288, -33)
+
+[node name="boksi_ruskea3" parent="Boksit" unique_id=983039722 instance=ExtResource("8_1rrcg")]
+position = Vector2(-415, -98)
+
+[node name="boksi_ruskea4" parent="Boksit" unique_id=296984452 instance=ExtResource("8_1rrcg")]
+position = Vector2(33, -27)
+
+[node name="boksi_ruskea5" parent="Boksit" unique_id=507610251 instance=ExtResource("8_1rrcg")]
+position = Vector2(160, -27)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=322471977]
+tile_map_data = PackedByteArray("AAD3//v/AAAIAAcAAAD3//z/AAAIAAcAAAD3//3/AAAIAAcAAAD4//v/AAAIAAcAAAD5//v/AAAIAAcAAAD6//v/AAAIAAcAAAD7//v/AAAIAAcAAAD8//v/AAAIAAcAAAD9//v/AAAIAAcAAAD+//v/AAAIAAcAAAD///v/AAAIAAcAAAAAAPv/AAAIAAcAAAABAPv/AAAIAAcAAAACAPv/AAAIAAcAAAADAPv/AAAIAAcAAAAEAPv/AAAIAAcAAAAFAPv/AAAIAAcAAAAGAPv/AAAIAAcAAAAHAPv/AAAIAAcAAAAIAPv/AAAIAAcAAAAIAPz/AAAIAAcAAAAIAP3/AAAIAAcAAAAIAP7/AAAIAAcAAAAIAP//AAAIAAcAAAAIAAAAAAAIAAcAAAAIAAEAAAAIAAcAAAAIAAIAAAAIAAcAAAAIAAMAAAAIAAcAAAAIAAQAAAAIAAcAAAAHAAQAAAAIAAcAAAAGAAQAAAAIAAcAAAAFAAQAAAAIAAcAAAAEAAQAAAALAAYAAAADAAQAAAALAAYAAAACAAQAAAALAAYAAAABAAQAAAALAAYAAAAAAAQAAAALAAYAAAD//wQAAAALAAYAAAD+/wQAAAAIAAcAAAD9/wQAAAAIAAcAAAD8/wQAAAAIAAcAAAD6/wQAAAAIAAcAAAD5/wQAAAAIAAcAAAD4/wQAAAAIAAcAAAD3/wQAAAAIAAcAAAD3/wMAAAAIAAcAAAD3/wIAAAAIAAcAAAD3/wEAAAAIAAcAAAD3/wAAAAAIAAcAAAD3////AAAIAAcAAAD3//7/AAAIAAcAAAD6/wEAAAAIAAcAAAD6/wAAAAALAAYAAAD8/wMAAAAIAAcAAAD7/wEAAAAIAAcAAAD8/wEAAAAIAAcAAAD5//3/AAALAAYAAAD5//z/AAALAAYAAAD7//z/AAAIAAcAAAD7//3/AAALAAYAAAD7//7/AAAIAAcAAAD7////AAALAAYAAAD7/wAAAAAIAAcAAAD//wIAAAAIAAcAAAD//wEAAAAIAAcAAAAAAAEAAAALAAAAAAABAAAAAAALAAYAAAACAP//AAALAAYAAAADAP//AAALAAYAAAADAP7/AAALAAYAAAAEAP7/AAAIAAcAAAD9//3/AAALAAUAAAD+//3/AAALAAUAAAD///7/AAALAAYAAAABAAEAAAAIAAcAAAACAAAAAAALAAYAAAD+/wEAAAALAAAAAAD5/wAAAAALAAYAAAD5////AAALAAYAAAD5//7/AAALAAYAAAD4//7/AAALAAYAAAD4//3/AAALAAYAAAD4//z/AAALAAYAAAD4////AAALAAYAAAD6//7/AAALAAYAAAD6//3/AAALAAYAAAD6//z/AAALAAYAAAD6////AAALAAMAAAD7/wIAAAAIAAcAAAD8/wIAAAAIAAcAAAD9/wIAAAAIAAcAAAD9/wEAAAAIAAcAAAD9////AAALAAYAAAD9//7/AAAIAAcAAAD8//7/AAAIAAcAAAD8//3/AAALAAYAAAD8//z/AAAIAAcAAAD9//z/AAAIAAcAAAD+//z/AAAIAAcAAAD///z/AAAIAAcAAAD///3/AAALAAAAAAAAAP3/AAALAAYAAAAAAPz/AAALAAYAAAABAPz/AAALAAYAAAABAP3/AAALAAYAAAABAP7/AAALAAYAAAAAAP7/AAALAAYAAAAAAP//AAALAAYAAAD/////AAALAAYAAAD+////AAALAAYAAAD//wAAAAALAAYAAAAAAAAAAAALAAYAAAABAP//AAALAAYAAAACAP7/AAALAAYAAAACAP3/AAALAAYAAAACAPz/AAALAAYAAAADAPz/AAAIAAcAAAADAP3/AAALAAIAAAAEAP3/AAALAAYAAAAEAPz/AAAIAAcAAAAFAPz/AAAIAAcAAAAFAP3/AAALAAYAAAAFAP7/AAAIAAcAAAAFAP//AAALAAYAAAAEAP//AAALAAAAAAAEAAAAAAAIAAcAAAADAAAAAAALAAYAAAADAAEAAAALAAYAAAACAAEAAAALAAYAAAACAAIAAAAIAAcAAAABAAIAAAAIAAcAAAAAAAIAAAALAAYAAAAAAAMAAAALAAYAAAD//wMAAAALAAAAAAD+/wMAAAALAAYAAAD+/wIAAAALAAYAAAD9/wMAAAAIAAcAAAABAAMAAAALAAYAAAACAAMAAAALAAYAAAADAAMAAAALAAAAAAADAAIAAAALAAQAAAAEAAIAAAAIAAcAAAAEAAEAAAALAAAAAAAFAAEAAAALAAYAAAAFAAAAAAAIAAcAAAAGAAAAAAALAAAAAAAGAP//AAALAAYAAAAGAP7/AAALAAYAAAAGAP3/AAALAAYAAAAGAPz/AAAIAAcAAAAHAPz/AAAIAAcAAAAHAP3/AAALAAYAAAAHAP7/AAALAAYAAAAHAP//AAAIAAcAAAAHAAAAAAAIAAcAAAAHAAEAAAAIAAcAAAAGAAEAAAALAAYAAAAGAAIAAAALAAYAAAAFAAIAAAAIAAcAAAAFAAMAAAALAAYAAAAEAAMAAAALAAYAAAAGAAMAAAALAAYAAAAHAAMAAAALAAYAAAAHAAIAAAALAAYAAAD8////AAALAAAAAAD8/wAAAAAIAAcAAAD7/wQAAAAIAAcAAAD7/wMAAAAIAAcAAAD6/wIAAAAIAAcAAAD5/wIAAAAIAAcAAAD4/wEAAAAIAAcAAAD4/wAAAAALAAYAAAD5/wEAAAAIAAcAAAD6/wMAAAAIAAcAAAD5/wMAAAAIAAcAAAD4/wMAAAAIAAcAAAD4/wIAAAAIAAcAAAD+/wAAAAALAAYAAAD9/wAAAAALAAYAAAD2/wQAAAAJAAcAAAD2/wMAAAAJAAcAAAD2/wIAAAAJAAcAAAD2/wEAAAAJAAcAAAD2/wAAAAAJAAcAAAD2////AAAJAAcAAAD2//7/AAAJAAcAAAD2//3/AAAJAAcAAAD2//z/AAAJAAcAAAD2//v/AAAJAAcAAAD2//r/AAAJAAcAAAD3//r/AAAJAAcAAAD4//r/AAAJAAcAAAD5//r/AAAJAAcAAAD6//r/AAAJAAcAAAD7//r/AAAJAAcAAAD8//r/AAAJAAcAAAD9//r/AAAJAAcAAAD+//r/AAAJAAcAAAD///r/AAAJAAcAAAAAAPr/AAAJAAcAAAABAPr/AAAJAAcAAAACAPr/AAAJAAcAAAADAPr/AAAJAAcAAAAEAPr/AAAJAAcAAAAFAPr/AAAJAAcAAAAGAPr/AAAJAAcAAAAHAPr/AAAJAAcAAAAIAPr/AAAJAAcAAAAJAPr/AAAJAAcAAAAJAPv/AAAJAAcAAAAJAPz/AAAJAAcAAAAJAP3/AAAJAAcAAAAJAP7/AAAJAAcAAAAJAP//AAAJAAcAAAAJAAAAAAAJAAcAAAAJAAEAAAAJAAcAAAAJAAIAAAAJAAcAAAAJAAMAAAAJAAcAAAAJAAQAAAAJAAcAAAAJAAUAAAAJAAcAAAAIAAUAAAAJAAcAAAAHAAUAAAAJAAcAAAAGAAUAAAAJAAcAAAADAAUAAAAJAAcAAAAEAAUAAAAJAAcAAAAFAAUAAAAJAAcAAAACAAUAAAAJAAcAAAABAAUAAAAJAAcAAAAAAAUAAAAJAAcAAAD//wUAAAAJAAcAAAD+/wUAAAAJAAcAAAD9/wUAAAAJAAcAAAD8/wUAAAAJAAcAAAD7/wUAAAAJAAcAAAD6/wUAAAAJAAcAAAD5/wUAAAAJAAcAAAD4/wUAAAAJAAcAAAD3/wUAAAAJAAcAAAD2/wUAAAAJAAcAAAD+//7/AAAIAAcAAAA=")
+tile_set = SubResource("TileSet_h0b6q")
+script = ExtResource("4_tm2np")
+
+[node name="Pelaaja" parent="." unique_id=2037649443 instance=ExtResource("5_005au")]
+position = Vector2(-103, -1)
