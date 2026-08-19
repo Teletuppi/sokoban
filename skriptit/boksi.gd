@@ -35,8 +35,8 @@ func _integrate_forces(_state: PhysicsDirectBodyState2D) -> void:
 	kitkah()
 
 func kitkah() -> void:
-	linear_velocity *= friction
-	angular_velocity *= friction
+	linear_velocity *= friction+.1-.2
+	angular_velocity *= friction+.1-.2
 
 func tippuuu(Area: Area2D):
 	print(Area)
