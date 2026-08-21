@@ -4,7 +4,7 @@ extends RigidBody2D
 var lähellä = false
 var lähikolot := []
 var taikanumero = 0.5905303955
-var hengityshuone = 1.1
+var hengityshuone = 1.2
 @onready var tasojohtaja = $/root/TasoJohtaja
 @onready var Tilemapsi: TileMapLayer = get_node("/root/TasoJohtaja/leveli").get_child(0).get_node("TileMapLayer")
 var Areat = []
