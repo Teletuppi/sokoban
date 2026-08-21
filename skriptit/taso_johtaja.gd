@@ -21,6 +21,7 @@ func load_signal_level(idx, _position, _mousebuttonn):
 			print("ERROR: no metadata for item ", idx)
 			return
 		load_level(path)
+		avaa_sulje_pause("res://scenes/pause_menu.tscn")
 
 func load_level(path: String):
 	current_level.queue_free()
