@@ -1,0 +1,172 @@
+[gd_scene format=4 uid="uid://bw4qyndtotmpy"]
+
+[ext_resource type="PackedScene" uid="uid://bdjaqyajb8sjj" path="res://boksit/boksi_harmaa_rotlock.tscn" id="2_6pqd1"]
+[ext_resource type="PackedScene" uid="uid://dted1v2u372b5" path="res://boksit/boksi_iso_ruskea_rotlock.tscn" id="3_mer44"]
+[ext_resource type="PackedScene" uid="uid://cfg18ik4uunvj" path="res://boksit/boksi_punainen_rotlock.tscn" id="5_w4fh5"]
+[ext_resource type="PackedScene" uid="uid://bsq44mh3f14xb" path="res://boksit/boksi_luiginvihreä_rotlock.tscn" id="6_yebje"]
+[ext_resource type="PackedScene" uid="uid://cnrdrfcbqtgyr" path="res://boksit/boksi_sininen_rotlock.tscn" id="7_717f4"]
+[ext_resource type="Texture2D" uid="uid://so5pcoq1biko" path="res://kenney_sokoban-pack/Tilesheet/sokoban_tilesheet.png" id="9_btrr0"]
+[ext_resource type="Script" uid="uid://b3fex8j1r4vnh" path="res://skriptit/tilemappi.gd" id="10_8w2ho"]
+[ext_resource type="PackedScene" uid="uid://dchub31y4txis" path="res://scenes/pelaaja.tscn" id="11_nusl2"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oglyl"]
+texture = ExtResource("9_btrr0")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+0:3/0 = 0
+0:4/0 = 0
+0:5/0 = 0
+0:6/0 = 0
+0:7/0 = 0
+1:0/0 = 0
+1:1/0 = 0
+1:2/0 = 0
+1:3/0 = 0
+1:4/0 = 0
+1:5/0 = 0
+1:6/0 = 0
+1:7/0 = 0
+2:0/0 = 0
+2:1/0 = 0
+2:2/0 = 0
+2:3/0 = 0
+2:4/0 = 0
+2:5/0 = 0
+2:6/0 = 0
+2:7/0 = 0
+3:0/0 = 0
+3:1/0 = 0
+3:2/0 = 0
+3:3/0 = 0
+3:4/0 = 0
+3:5/0 = 0
+3:6/0 = 0
+3:7/0 = 0
+4:0/0 = 0
+4:1/0 = 0
+4:2/0 = 0
+4:3/0 = 0
+4:4/0 = 0
+4:5/0 = 0
+4:6/0 = 0
+4:7/0 = 0
+5:0/0 = 0
+5:1/0 = 0
+5:2/0 = 0
+5:3/0 = 0
+5:4/0 = 0
+5:5/0 = 0
+5:6/0 = 0
+5:7/0 = 0
+6:0/0 = 0
+6:1/0 = 0
+6:2/0 = 0
+6:3/0 = 0
+6:4/0 = 0
+6:5/0 = 0
+6:6/0 = 0
+6:7/0 = 0
+6:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+7:0/0 = 0
+7:1/0 = 0
+7:2/0 = 0
+7:3/0 = 0
+7:4/0 = 0
+7:5/0 = 0
+7:6/0 = 0
+7:7/0 = 0
+7:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+8:0/0 = 0
+8:1/0 = 0
+8:2/0 = 0
+8:3/0 = 0
+8:4/0 = 0
+8:5/0 = 0
+8:6/0 = 0
+8:7/0 = 0
+8:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+9:0/0 = 0
+9:1/0 = 0
+9:2/0 = 0
+9:3/0 = 0
+9:4/0 = 0
+9:5/0 = 0
+9:6/0 = 0
+9:7/0 = 0
+9:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+10:0/0 = 0
+10:1/0 = 0
+10:2/0 = 0
+10:3/0 = 0
+10:4/0 = 0
+10:5/0 = 0
+10:6/0 = 0
+10:7/0 = 0
+11:0/0 = 0
+11:1/0 = 0
+11:2/0 = 0
+11:3/0 = 0
+11:4/0 = 0
+11:5/0 = 0
+11:6/0 = 0
+11:7/0 = 0
+12:0/0 = 0
+12:1/0 = 0
+12:2/0 = 0
+12:3/0 = 0
+12:4/0 = 0
+12:5/0 = 0
+12:6/0 = 0
+12:7/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_h0b6q"]
+tile_size = Vector2i(64, 64)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_oglyl")
+
+[node name="level_20" type="Node2D" unique_id=2020012203]
+
+[node name="Boksit" type="Node" parent="." unique_id=2260696]
+
+[node name="boksi_harmaa" parent="Boksit" unique_id=486198831 instance=ExtResource("2_6pqd1")]
+position = Vector2(-415, 31)
+
+[node name="boksi_harmaa2" parent="Boksit" unique_id=889986271 instance=ExtResource("2_6pqd1")]
+position = Vector2(-485, 31)
+
+[node name="boksi_ruskea" parent="Boksit" unique_id=1699110756 instance=ExtResource("3_mer44")]
+position = Vector2(-32, 226)
+
+[node name="boksi_sininen" parent="Boksit" unique_id=2091692865 instance=ExtResource("7_717f4")]
+position = Vector2(-415, 162)
+
+[node name="boksi_sininen2" parent="Boksit" unique_id=845755631 instance=ExtResource("7_717f4")]
+position = Vector2(-477, 159)
+
+[node name="boksi_punainen" parent="Boksit" unique_id=1551354861 instance=ExtResource("5_w4fh5")]
+position = Vector2(158, -95)
+
+[node name="boksi_punainen2" parent="Boksit" unique_id=1068946672 instance=ExtResource("5_w4fh5")]
+position = Vector2(480, 161)
+
+[node name="boksi_luiginvihreä" parent="Boksit" unique_id=1143890805 instance=ExtResource("6_yebje")]
+position = Vector2(415, 161)
+
+[node name="boksi_luiginvihreä2" parent="Boksit" unique_id=1333804318 instance=ExtResource("6_yebje")]
+position = Vector2(159, 164)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=322471977]
+tile_map_data = PackedByteArray("AAD3//v/AAAGAAYAAAD3//z/AAAGAAYAAAD3//3/AAAIAAcAAAD4//v/AAAGAAYAAAD5//v/AAAGAAYAAAD6//v/AAAGAAYAAAD7//v/AAAGAAYAAAD8//v/AAAGAAYAAAD9//v/AAAGAAYAAAD+//v/AAAIAAcAAAD///v/AAALAAEAAAAAAPv/AAAIAAcAAAABAPv/AAAGAAYAAAACAPv/AAAGAAYAAAADAPv/AAAGAAYAAAAEAPv/AAAGAAYAAAAFAPv/AAAGAAYAAAAGAPv/AAALAAAAAAAHAPv/AAALAAAAAAAIAPv/AAALAAAAAAAIAPz/AAALAAAAAAAIAP3/AAAIAAcAAAAIAP7/AAAGAAYAAAAIAP//AAALAAAAAAAIAAAAAAALAAAAAAAIAAEAAAALAAAAAAAIAAIAAAALAAAAAAAIAAMAAAALAAAAAAAIAAQAAAAGAAYAAAAHAAQAAAAGAAYAAAAGAAQAAAAGAAYAAAAFAAQAAAAGAAYAAAAEAAQAAAAGAAYAAAADAAQAAAAGAAYAAAACAAQAAAAGAAYAAAABAAQAAAAGAAYAAAAAAAQAAAAGAAYAAAD//wQAAAAGAAYAAAD+/wQAAAAGAAYAAAD9/wQAAAAGAAYAAAD8/wQAAAAGAAYAAAD6/wQAAAAGAAYAAAD5/wQAAAALAAAAAAD4/wQAAAALAAAAAAD3/wQAAAALAAAAAAD3/wMAAAALAAAAAAD3/wIAAAALAAAAAAD3/wEAAAAIAAcAAAD3/wAAAAALAAAAAAD3////AAALAAAAAAD3//7/AAAIAAcAAAD6/wEAAAAGAAYAAAD6/wAAAAALAAAAAAD8/wMAAAAIAAcAAAD7/wEAAAAIAAcAAAD8/wEAAAAIAAcAAAD5//3/AAAIAAcAAAD5//z/AAAGAAYAAAD7//z/AAAGAAYAAAD7//3/AAAIAAcAAAD7//7/AAAGAAYAAAD7////AAAGAAYAAAD7/wAAAAAGAAYAAAD//wIAAAALAAQAAAD//wEAAAAGAAYAAAAAAAEAAAAIAAcAAAABAAAAAAAGAAYAAAACAP//AAAIAAcAAAADAP//AAAIAAcAAAADAP7/AAAGAAYAAAAEAP7/AAAGAAYAAAD9//3/AAAIAAcAAAD+//3/AAAIAAcAAAD///7/AAALAAIAAAABAAEAAAAGAAYAAAACAAAAAAAGAAYAAAD+/wEAAAAIAAcAAAD5/wAAAAAGAAYAAAD5////AAALAAAAAAD5//7/AAAGAAYAAAD4//7/AAAIAAcAAAD4//3/AAAIAAcAAAD4//z/AAAGAAYAAAD4////AAALAAAAAAD6//7/AAAGAAYAAAD6//3/AAAIAAcAAAD6//z/AAAGAAYAAAD6////AAAIAAcAAAD7/wIAAAAGAAYAAAD8/wIAAAAGAAYAAAD9/wIAAAAGAAYAAAD9/wEAAAALAAAAAAD9////AAAGAAYAAAD9//7/AAAGAAYAAAD8//7/AAAGAAYAAAD8//3/AAAIAAcAAAD8//z/AAAGAAYAAAD9//z/AAAGAAYAAAD+//z/AAAIAAcAAAD///z/AAALAAUAAAD///3/AAAGAAYAAAAAAP3/AAAIAAcAAAAAAPz/AAAGAAYAAAABAPz/AAAGAAYAAAABAP3/AAAGAAYAAAABAP7/AAAGAAYAAAAAAP//AAAIAAcAAAD/////AAAGAAYAAAD+////AAAIAAcAAAD//wAAAAALAAMAAAAAAAAAAAAGAAYAAAABAP//AAAIAAcAAAACAP7/AAAGAAYAAAACAP3/AAAGAAYAAAACAPz/AAAGAAYAAAADAPz/AAAGAAYAAAADAP3/AAAGAAYAAAAEAP3/AAAGAAYAAAAEAPz/AAAGAAYAAAAFAPz/AAALAAUAAAAFAP3/AAAGAAYAAAAFAP7/AAAGAAYAAAAFAP//AAAIAAcAAAAEAP//AAALAAAAAAAEAAAAAAAGAAYAAAADAAAAAAAGAAYAAAADAAEAAAAGAAYAAAACAAEAAAAGAAYAAAACAAIAAAAGAAYAAAABAAIAAAAGAAYAAAAAAAIAAAAGAAYAAAAAAAMAAAAIAAcAAAD//wMAAAAGAAYAAAD+/wMAAAAIAAcAAAD+/wIAAAAGAAYAAAD9/wMAAAAIAAcAAAABAAMAAAAGAAYAAAACAAMAAAAGAAYAAAADAAMAAAAGAAYAAAADAAIAAAAGAAYAAAAEAAIAAAALAAAAAAAEAAEAAAAGAAYAAAAFAAEAAAAIAAcAAAAFAAAAAAAGAAYAAAAGAAAAAAAGAAYAAAAGAP//AAAGAAYAAAAGAP7/AAAGAAYAAAAGAP3/AAAIAAcAAAAGAPz/AAAGAAYAAAAHAPz/AAAGAAYAAAAHAP3/AAAIAAcAAAAHAP7/AAAGAAYAAAAHAP//AAAIAAcAAAAHAAAAAAALAAAAAAAHAAEAAAAIAAcAAAAGAAEAAAAIAAcAAAAGAAIAAAAGAAYAAAAFAAIAAAALAAMAAAAFAAMAAAAIAAcAAAAEAAMAAAAGAAYAAAAGAAMAAAAIAAcAAAAHAAMAAAAIAAcAAAAHAAIAAAAGAAYAAAD8////AAAGAAYAAAD8/wAAAAAGAAYAAAD7/wQAAAAGAAYAAAD7/wMAAAAIAAcAAAD6/wIAAAALAAAAAAD5/wIAAAAGAAYAAAD4/wEAAAAIAAcAAAD4/wAAAAAGAAYAAAD5/wEAAAAIAAcAAAD6/wMAAAAGAAYAAAD5/wMAAAAIAAcAAAD4/wMAAAAIAAcAAAD4/wIAAAAGAAYAAAD+/wAAAAAGAAYAAAD9/wAAAAAGAAYAAAD2/wQAAAAJAAcAAAD2/wMAAAAJAAcAAAD2/wIAAAAJAAcAAAD2/wEAAAAJAAcAAAD2/wAAAAAJAAcAAAD2////AAAJAAcAAAD2//7/AAAJAAcAAAD2//3/AAAJAAcAAAD2//z/AAAJAAcAAAD2//v/AAAJAAcAAAD2//r/AAAJAAcAAAD3//r/AAAJAAcAAAD4//r/AAAJAAcAAAD5//r/AAAJAAcAAAD6//r/AAAJAAcAAAD7//r/AAAJAAcAAAD8//r/AAAJAAcAAAD9//r/AAAJAAcAAAD+//r/AAAJAAcAAAD///r/AAAJAAcAAAAAAPr/AAAJAAcAAAABAPr/AAAJAAcAAAACAPr/AAAJAAcAAAADAPr/AAAJAAcAAAAEAPr/AAAJAAcAAAAFAPr/AAAJAAcAAAAGAPr/AAAJAAcAAAAHAPr/AAAJAAcAAAAIAPr/AAAJAAcAAAAJAPr/AAAJAAcAAAAJAPv/AAAJAAcAAAAJAPz/AAAJAAcAAAAJAP3/AAAJAAcAAAAJAP7/AAAJAAcAAAAJAP//AAAJAAcAAAAJAAAAAAAJAAcAAAAJAAEAAAAJAAcAAAAJAAIAAAAJAAcAAAAJAAMAAAAJAAcAAAAJAAQAAAAJAAcAAAAJAAUAAAAJAAcAAAAIAAUAAAAJAAcAAAAHAAUAAAAJAAcAAAAGAAUAAAAJAAcAAAADAAUAAAAJAAcAAAAEAAUAAAAJAAcAAAAFAAUAAAAJAAcAAAACAAUAAAAJAAcAAAABAAUAAAAJAAcAAAAAAAUAAAAJAAcAAAD//wUAAAAJAAcAAAD+/wUAAAAJAAcAAAD9/wUAAAAJAAcAAAD8/wUAAAAJAAcAAAD7/wUAAAAJAAcAAAD6/wUAAAAJAAcAAAD5/wUAAAAJAAcAAAD4/wUAAAAJAAcAAAD3/wUAAAAJAAcAAAD2/wUAAAAJAAcAAAD+//7/AAALAAAAAAAAAP7/AAAGAAYAAAA=")
+tile_set = SubResource("TileSet_h0b6q")
+script = ExtResource("10_8w2ho")
+
+[node name="Pelaaja" parent="." unique_id=2037649443 instance=ExtResource("11_nusl2")]
+position = Vector2(-30, 268)
+
+[node name="boksi_harmaa" parent="." unique_id=322558360 instance=ExtResource("2_6pqd1")]
+position = Vector2(480, -222)
+
+[node name="boksi_sininen" parent="." unique_id=500937347 instance=ExtResource("7_717f4")]
+position = Vector2(416, -224)
