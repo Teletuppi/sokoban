@@ -140,3 +140,4 @@ script = ExtResource("3_rqsg2")
 
 [node name="Pelaaja" parent="." unique_id=1262682169 instance=ExtResource("4_fpvgn")]
 position = Vector2(-27, 18)
+collision_mask = 3

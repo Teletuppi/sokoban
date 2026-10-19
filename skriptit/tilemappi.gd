@@ -23,16 +23,19 @@ func _ready():
 		area.position = map_to_local(cell)
 		area.add_to_group("Kolot")
 
-
+		var reik = StaticBody2D.new()
+		
 		var collision = CollisionShape2D.new()
 		collision.name = "kollision"
 		var rect_shape = RectangleShape2D.new()
-		rect_shape.size = Vector2(64, 64)  # <-- replace with your tile size
-	
-	# Assign shape to collision and add as child
+		rect_shape.size = Vector2(48, 48)  # <-- replace with your tile size
+		#collision.
+		reik.set_collision_layer_value(1, false)
+		reik.set_collision_layer_value(2, true)
+		reik.add_child(collision)
 
 		collision.shape = rect_shape
-		area.add_child(collision)
+		area.add_child(reik)
 		#print(collision.position, "TÄMÄ ON OIKEASTIKKIN TÄRKEÄ ei oikeesti mätiääss vaan sanoi")
 		
 		add_child(area)
